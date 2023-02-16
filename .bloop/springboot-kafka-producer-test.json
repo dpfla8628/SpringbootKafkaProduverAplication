@@ -1,0 +1,2181 @@
+{
+    "version": "1.4.0",
+    "project": {
+        "name": "springboot-kafka-producer-test",
+        "directory": "/Users/yerimlee/Desktop/springboot-kafka-producer",
+        "workspaceDir": "/Users/yerimlee/Desktop/springboot-kafka-producer",
+        "sources": [
+            "/Users/yerimlee/Desktop/springboot-kafka-producer/src/test/java"
+        ],
+        "dependencies": [
+            "springboot-kafka-producer"
+        ],
+        "classpath": [
+            "/Users/yerimlee/Desktop/springboot-kafka-producer/.bloop/springboot-kafka-producer/build/classes",
+            "/Users/yerimlee/Desktop/springboot-kafka-producer/src/main/resources",
+            "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-web/2.6.2/685b236afc0144a52383cd2c52731dd016f9badd/spring-boot-starter-web-2.6.2.jar",
+            "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.springframework.kafka/spring-kafka/2.8.1/3006087c66d34b76f8eed0c6eb705f88946d55a8/spring-kafka-2.8.1.jar",
+            "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/com.github.javafaker/javafaker/1.0.2/be0ff271b1208416822db4438864df47f90af92f/javafaker-1.0.2.jar",
+            "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/com.googlecode.json-simple/json-simple/1.1.1/c9ad4a0850ab676c5c64461a05ca524cdfff59f1/json-simple-1.1.1.jar",
+            "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-test/2.6.2/17c687f9e596262705ff31e85fc6b700a9c4afc0/spring-boot-starter-test-2.6.2.jar",
+            "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.springframework.kafka/spring-kafka-test/2.8.1/ef67a7de59706da91437e8d074032ed8b2583e3c/spring-kafka-test-2.8.1.jar",
+            "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-json/2.6.2/c0d457ff259c487521706fd2efac75d61595d527/spring-boot-starter-json-2.6.2.jar",
+            "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter/2.6.2/c36f1f6886cdbedc5347fdea62b97b44b053b0ba/spring-boot-starter-2.6.2.jar",
+            "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-tomcat/2.6.2/81bc9a57c0df9787e122c3b2a66e5a1ac0e139a5/spring-boot-starter-tomcat-2.6.2.jar",
+            "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.springframework/spring-webmvc/5.3.14/beb6dc57abf6685878b824d8ab0af39ebd1cfbae/spring-webmvc-5.3.14.jar",
+            "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/5.3.14/801d96f3914ace2e347ee3f6d29e21073e4f50ed/spring-web-5.3.14.jar",
+            "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-test-autoconfigure/2.6.2/15d178e8e69f3edefe6b17d4cbcb21e921c69463/spring-boot-test-autoconfigure-2.6.2.jar",
+            "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-test/2.6.2/c4ac845e842f67003571343181fe432e09e04d6d/spring-boot-test-2.6.2.jar",
+            "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-autoconfigure/2.6.2/7c91bce101d3f796cccbc1a6744c1ea389fff73f/spring-boot-autoconfigure-2.6.2.jar",
+            "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot/2.6.2/bbf59f411320da665411692359ff511315d0ff91/spring-boot-2.6.2.jar",
+            "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.springframework/spring-context/5.3.14/ce6042492f042131f602bdc83fcb412b142bdac5/spring-context-5.3.14.jar",
+            "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.springframework/spring-messaging/5.3.14/6a8658601e6dbfc5fa95634d6eacf4c409abb4c3/spring-messaging-5.3.14.jar",
+            "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.springframework/spring-tx/5.3.14/3d80a1e051f071e9cd42fc99698bf9022862b5c/spring-tx-5.3.14.jar",
+            "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.springframework.retry/spring-retry/1.3.1/f8644c86f2be54623c3b336a56b54216841a3f22/spring-retry-1.3.1.jar",
+            "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.apache.kafka/kafka-streams-test-utils/3.0.0/8dd9220520bda26cc58f5962a465a62053d482b8/kafka-streams-test-utils-3.0.0.jar",
+            "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.apache.kafka/kafka_2.13/3.0.0/7277dc596c429bcd349983a5ae92f46a5e0c80d/kafka_2.13-3.0.0.jar",
+            "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.apache.kafka/kafka_2.13/3.0.0/7e38b72a27cbb81b3457f0979e83a1121be9c6c4/kafka_2.13-3.0.0-test.jar",
+            "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.apache.kafka/kafka-streams/3.0.0/9a76b73623b06c654d96df917026706c50a88226/kafka-streams-3.0.0.jar",
+            "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.apache.kafka/kafka-clients/3.0.0/5301db5e9ad9f17da85a4dec06e1d313071dc9d8/kafka-clients-3.0.0.jar",
+            "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.apache.kafka/kafka-clients/3.0.0/855e87230424a6427b5a06cdc5813477bba18cff/kafka-clients-3.0.0-test.jar",
+            "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-lang3/3.12.0/c6842c86792ff03b9f1d1fe2aab8dc23aa6c6f0e/commons-lang3-3.12.0.jar",
+            "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.yaml/snakeyaml/1.29/408c282043543d43086c5b5c5908a3d73679d6a0/snakeyaml-1.29-android.jar",
+            "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.yaml/snakeyaml/1.29/6d0cdafb2010f1297e574656551d7145240f6e25/snakeyaml-1.29.jar",
+            "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/com.github.mifmif/generex/1.0.2/b378f873b4e8d7616c3d920e2132cb1c87679600/generex-1.0.2.jar",
+            "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/junit/junit/4.13.2/8ac9e16d933b6fb43bc7f576336b8f4d7eb5ba12/junit-4.13.2.jar",
+            "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/com.jayway.jsonpath/json-path/2.6.0/67f565b424f7903a12d4f5b9361b11462ecacdac/json-path-2.6.0.jar",
+            "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/jakarta.xml.bind/jakarta.xml.bind-api/2.3.3/48e3b9cfc10752fba3521d6511f4165bea951801/jakarta.xml.bind-api-2.3.3.jar",
+            "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.assertj/assertj-core/3.21.0/27a14d6d22c4e3d58f799fb2a5ca8eaf53e6942a/assertj-core-3.21.0.jar",
+            "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/2.2/3f2bd07716a31c395e2837254f37f21f0f0ab24b/hamcrest-core-2.2.jar",
+            "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest/2.2/1820c0968dba3a11a1b30669bb1f01978a91dedc/hamcrest-2.2.jar",
+            "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-params/5.8.2/ddeafe92fc263f895bfb73ffeca7fd56e23c2cce/junit-jupiter-params-5.8.2.jar",
+            "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-api/5.8.2/4c21029217adf07e4c0d0c5e192b6bf610c94bdc/junit-jupiter-api-5.8.2.jar",
+            "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.junit.platform/junit-platform-commons/1.8.2/32c8b8617c1342376fd5af2053da6410d8866861/junit-platform-commons-1.8.2.jar",
+            "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter/5.8.2/5a817b1e63f1217e5c586090c45e681281f097ad/junit-jupiter-5.8.2.jar",
+            "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.mockito/mockito-junit-jupiter/4.0.0/b76de25bd6e5d8f7924d0536729c0076e37e9396/mockito-junit-jupiter-4.0.0.jar",
+            "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.mockito/mockito-core/4.0.0/f5195e0c4a45716bbd2d1d29173adbd148acce3a/mockito-core-4.0.0.jar",
+            "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.skyscreamer/jsonassert/1.5.0/6c9d5fe2f59da598d9aefc1cfc6528ff3cf32df3/jsonassert-1.5.0.jar",
+            "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.springframework/spring-test/5.3.14/770429bdf3a3823604817bb66f63b5ee8cf1050/spring-test-5.3.14.jar",
+            "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.springframework/spring-aop/5.3.14/f049146a55991e89c0f04b9624f1f69e1763d80f/spring-aop-5.3.14.jar",
+            "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.springframework/spring-beans/5.3.14/24cc27af89edc1581a57bb15bc160d2353f40a0e/spring-beans-5.3.14.jar",
+            "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.springframework/spring-expression/5.3.14/5cd4c568522b7084afac5d2ac6cb945b797b3f16/spring-expression-5.3.14.jar",
+            "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.springframework/spring-core/5.3.14/d87ad19f9d8b9a3f1a143db5a2be34c61751aaa2/spring-core-5.3.14.jar",
+            "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.xmlunit/xmlunit-core/2.8.4/35be57989ca80eefa03161b211630e319a8f36c6/xmlunit-core-2.8.4.jar",
+            "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.apache.zookeeper/zookeeper/3.6.3/a6e74f826db85ff8c51c15ef0fa2ea0b462aef25/zookeeper-3.6.3.jar",
+            "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.apache.kafka/kafka-metadata/3.0.0/5a2b9a154d5530c4036ac405ac8bff981981621c/kafka-metadata-3.0.0.jar",
+            "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-logging/2.6.2/58d4896c606b6ff07b9bd8e46c87eac5a51255de/spring-boot-starter-logging-2.6.2.jar",
+            "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/jakarta.annotation/jakarta.annotation-api/1.3.5/59eb84ee0d616332ff44aba065f3888cf002cd2d/jakarta.annotation-api-1.3.5.jar",
+            "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/2.13.1/1ece5a87b59701328215e0083448b4d451857cbd/jackson-datatype-jsr310-2.13.1.jar",
+            "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.module/jackson-module-parameter-names/2.13.1/cbeec2259213c555ef451a2e05f35ed1dbfbf799/jackson-module-parameter-names-2.13.1.jar",
+            "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.13.1/1cbcbe4623113e6af92ccaa89884a345270f1a87/jackson-annotations-2.13.1.jar",
+            "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.13.1/51ae921a2ed1e06ca8876f12f32f265e83c0b2b8/jackson-core-2.13.1.jar",
+            "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/2.13.1/8ecfa9bcd714269fdf22c33f9fd00d0643bd0e21/jackson-datatype-jdk8-2.13.1.jar",
+            "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.13.1/698b2d2b15d9a1b7aae025f1d9f576842285e7f6/jackson-databind-2.13.1.jar",
+            "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-websocket/9.0.56/d84be683a5d47e820d077db1d511181c7db9e4e9/tomcat-embed-websocket-9.0.56.jar",
+            "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-core/9.0.56/7c8e0008564c644beec976ab115e2670bb4d7003/tomcat-embed-core-9.0.56.jar",
+            "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-el/9.0.56/8e4f28f714693ad4e158e61f41371d4e4c6b4e23/tomcat-embed-el-9.0.56.jar",
+            "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/dk.brics.automaton/automaton/1.11-8/6ebfa65eb431ff4b715a23be7a750cbc4cc96d0f/automaton-1.11-8.jar",
+            "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/net.minidev/json-smart/2.4.7/8d7f4c1530c07c54930935f3da85f48b83b3c109/json-smart-2.4.7.jar",
+            "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-classic/1.2.9/7d495522b08a9a66084bf417e70eedf95ef706bc/logback-classic-1.2.9.jar",
+            "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-to-slf4j/2.17.0/e50b82411b9ce9c204c938509f914b2bb887168b/log4j-to-slf4j-2.17.0.jar",
+            "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.slf4j/jul-to-slf4j/1.7.32/8a055c04ab44e8e8326901cadf89080721348bdb/jul-to-slf4j-1.7.32.jar",
+            "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.32/cdcff33940d9f2de763bc41ea05a0be5941176c3/slf4j-api-1.7.32.jar",
+            "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/jakarta.activation/jakarta.activation-api/1.2.2/99f53adba383cb1bf7c3862844488574b559621f/jakarta.activation-api-1.2.2.jar",
+            "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy/1.11.22/8b4c7fa5562a09da1c2a9ab0873cb51f5034d83f/byte-buddy-1.11.22.jar",
+            "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy-agent/1.11.22/2fbcf3210dfc09b42242e3b66a5281cc5b9adb80/byte-buddy-agent-1.11.22.jar",
+            "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/com.vaadin.external.google/android-json/0.0.20131108.vaadin1/fa26d351fe62a6a17f5cda1287c1c6110dec413f/android-json-0.0.20131108.vaadin1.jar",
+            "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.springframework/spring-jcl/5.3.14/ffcf745ed5ba32930771378316fd08e97986bec2/spring-jcl-5.3.14.jar",
+            "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.apache.zookeeper/zookeeper-jute/3.6.3/8990d19ec3db01f45f82d4011a11b085db66de05/zookeeper-jute-3.6.3.jar",
+            "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.apache.yetus/audience-annotations/0.5.0/55762d3191a8d6610ef46d11e8cb70c7667342a3/audience-annotations-0.5.0.jar",
+            "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/io.netty/netty-handler/4.1.72.Final/9feee089fee606c64be90c0332db9aef1f7d8e46/netty-handler-4.1.72.Final.jar",
+            "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/io.netty/netty-transport-native-epoll/4.1.72.Final/a20005c2d101889d04274c5cd5ac6276c95d415e/netty-transport-native-epoll-4.1.72.Final.jar",
+            "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-library/2.13.6/ed7a2f528c7389ea65746c22a01031613d98ab3d/scala-library-2.13.6.jar",
+            "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.opentest4j/opentest4j/1.2.0/28c11eb91f9b6d8e200631d46e20a7f407f2a046/opentest4j-1.2.0.jar",
+            "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.apiguardian/apiguardian-api/1.1.2/a231e0d844d2721b0fa1b238006d15c6ded6842a/apiguardian-api-1.1.2.jar",
+            "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/net.minidev/accessors-smart/2.4.7/3970cfc505e6657ca60f3aa57c849f6043000d7a/accessors-smart-2.4.7.jar",
+            "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/io.netty/netty-codec/4.1.72.Final/613c4019d687db4e9a5532564e442f83c4474ed7/netty-codec-4.1.72.Final.jar",
+            "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/io.netty/netty-transport-classes-epoll/4.1.72.Final/490c922f85c8f6a5b39bdeec1f6629d58d48eaff/netty-transport-classes-epoll-4.1.72.Final.jar",
+            "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/io.netty/netty-transport-native-unix-common/4.1.72.Final/cedc023ffdcb68543b22a1ebc7960a160589aa09/netty-transport-native-unix-common-4.1.72.Final.jar",
+            "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/io.netty/netty-transport/4.1.72.Final/99138b436a584879355aca8fe3c64b46227d5d79/netty-transport-4.1.72.Final.jar",
+            "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/io.netty/netty-resolver/4.1.72.Final/4ff458458ea32ed1156086820b624a815fcbf2c0/netty-resolver-4.1.72.Final.jar",
+            "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/io.netty/netty-buffer/4.1.72.Final/f306eec3f79541f9b8af9c471a0d5b63b7996272/netty-buffer-4.1.72.Final.jar",
+            "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/io.netty/netty-common/4.1.72.Final/a55bac9c3af5f59828207b551a96ac19bbfc341e/netty-common-4.1.72.Final.jar",
+            "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/io.netty/netty-tcnative-classes/2.0.46.Final/9937a832d9c19861822d345b48ced388b645aa5f/netty-tcnative-classes-2.0.46.Final.jar",
+            "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.rocksdb/rocksdbjni/6.19.3/54bb5df7d522a90b94f647b40d216e285f052a54/rocksdbjni-6.19.3.jar",
+            "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-core/1.2.9/cdaca0cf922c5791a8efa0063ec714ca974affe3/logback-core-1.2.9.jar",
+            "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-api/2.17.0/bbd791e9c8c9421e45337c4fe0a10851c086e36c/log4j-api-2.17.0.jar",
+            "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm/9.1/a99500cf6eea30535eeac6be73899d048f8d12a8/asm-9.1.jar"
+        ],
+        "out": "/Users/yerimlee/Desktop/springboot-kafka-producer/.bloop/springboot-kafka-producer-test/build",
+        "classesDir": "/Users/yerimlee/Desktop/springboot-kafka-producer/.bloop/springboot-kafka-producer-test/build/classes",
+        "resources": [
+            "/Users/yerimlee/Desktop/springboot-kafka-producer/src/test/resources"
+        ],
+        "java": {
+            "options": [
+                "-source",
+                "1.8",
+                "-target",
+                "1.8",
+                "-encoding",
+                "UTF-8",
+                "-h",
+                "/Users/yerimlee/Desktop/springboot-kafka-producer/build/generated/sources/headers/java/test",
+                "-g",
+                "-sourcepath",
+                "",
+                "-proc:none",
+                "-XDuseUnsharedTable=true",
+                "-parameters"
+            ]
+        },
+        "test": {
+            "frameworks": [
+                {
+                    "names": [
+                        "com.novocode.junit.JUnitFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "org.scalatest.tools.Framework",
+                        "org.scalatest.tools.ScalaTestFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "org.scalacheck.ScalaCheckFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "org.specs.runner.SpecsFramework",
+                        "org.specs2.runner.Specs2Framework",
+                        "org.specs2.runner.SpecsFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "utest.runner.Framework"
+                    ]
+                },
+                {
+                    "names": [
+                        "munit.Framework"
+                    ]
+                }
+            ],
+            "options": {
+                "excludes": [
+                    
+                ],
+                "arguments": [
+                    {
+                        "args": [
+                            "-v",
+                            "-a"
+                        ],
+                        "framework": {
+                            "names": [
+                                "com.novocode.junit.JUnitFramework"
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        "platform": {
+            "name": "jvm",
+            "config": {
+                "home": "/Library/Java/JavaVirtualMachines/jdk-11.0.12.jdk/Contents/Home",
+                "options": [
+                    
+                ]
+            },
+            "mainClass": [
+                
+            ],
+            "classpath": [
+                "/Users/yerimlee/Desktop/springboot-kafka-producer/.bloop/springboot-kafka-producer/build/classes",
+                "/Users/yerimlee/Desktop/springboot-kafka-producer/src/main/resources",
+                "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-web/2.6.2/685b236afc0144a52383cd2c52731dd016f9badd/spring-boot-starter-web-2.6.2.jar",
+                "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.springframework.kafka/spring-kafka/2.8.1/3006087c66d34b76f8eed0c6eb705f88946d55a8/spring-kafka-2.8.1.jar",
+                "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/com.github.javafaker/javafaker/1.0.2/be0ff271b1208416822db4438864df47f90af92f/javafaker-1.0.2.jar",
+                "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/com.googlecode.json-simple/json-simple/1.1.1/c9ad4a0850ab676c5c64461a05ca524cdfff59f1/json-simple-1.1.1.jar",
+                "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-test/2.6.2/17c687f9e596262705ff31e85fc6b700a9c4afc0/spring-boot-starter-test-2.6.2.jar",
+                "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.springframework.kafka/spring-kafka-test/2.8.1/ef67a7de59706da91437e8d074032ed8b2583e3c/spring-kafka-test-2.8.1.jar",
+                "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-json/2.6.2/c0d457ff259c487521706fd2efac75d61595d527/spring-boot-starter-json-2.6.2.jar",
+                "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter/2.6.2/c36f1f6886cdbedc5347fdea62b97b44b053b0ba/spring-boot-starter-2.6.2.jar",
+                "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-tomcat/2.6.2/81bc9a57c0df9787e122c3b2a66e5a1ac0e139a5/spring-boot-starter-tomcat-2.6.2.jar",
+                "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.springframework/spring-webmvc/5.3.14/beb6dc57abf6685878b824d8ab0af39ebd1cfbae/spring-webmvc-5.3.14.jar",
+                "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/5.3.14/801d96f3914ace2e347ee3f6d29e21073e4f50ed/spring-web-5.3.14.jar",
+                "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-test-autoconfigure/2.6.2/15d178e8e69f3edefe6b17d4cbcb21e921c69463/spring-boot-test-autoconfigure-2.6.2.jar",
+                "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-test/2.6.2/c4ac845e842f67003571343181fe432e09e04d6d/spring-boot-test-2.6.2.jar",
+                "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-autoconfigure/2.6.2/7c91bce101d3f796cccbc1a6744c1ea389fff73f/spring-boot-autoconfigure-2.6.2.jar",
+                "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot/2.6.2/bbf59f411320da665411692359ff511315d0ff91/spring-boot-2.6.2.jar",
+                "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.springframework/spring-context/5.3.14/ce6042492f042131f602bdc83fcb412b142bdac5/spring-context-5.3.14.jar",
+                "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.springframework/spring-messaging/5.3.14/6a8658601e6dbfc5fa95634d6eacf4c409abb4c3/spring-messaging-5.3.14.jar",
+                "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.springframework/spring-tx/5.3.14/3d80a1e051f071e9cd42fc99698bf9022862b5c/spring-tx-5.3.14.jar",
+                "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.springframework.retry/spring-retry/1.3.1/f8644c86f2be54623c3b336a56b54216841a3f22/spring-retry-1.3.1.jar",
+                "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.apache.kafka/kafka_2.13/3.0.0/7277dc596c429bcd349983a5ae92f46a5e0c80d/kafka_2.13-3.0.0.jar",
+                "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.apache.kafka/kafka_2.13/3.0.0/7e38b72a27cbb81b3457f0979e83a1121be9c6c4/kafka_2.13-3.0.0-test.jar",
+                "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.apache.kafka/kafka-metadata/3.0.0/5a2b9a154d5530c4036ac405ac8bff981981621c/kafka-metadata-3.0.0.jar",
+                "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.apache.kafka/kafka-streams-test-utils/3.0.0/8dd9220520bda26cc58f5962a465a62053d482b8/kafka-streams-test-utils-3.0.0.jar",
+                "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.apache.kafka/kafka-raft/3.0.0/18a25c1d7bbb9a107438148dc6dc4b48ad264495/kafka-raft-3.0.0.jar",
+                "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.apache.kafka/kafka-storage/3.0.0/749e1b31a68e6b40266bd2729fb2000f99c220f/kafka-storage-3.0.0.jar",
+                "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.apache.kafka/kafka-server-common/3.0.0/6d8bd5b4bf2e350d27b36c7770cede3b558ad448/kafka-server-common-3.0.0.jar",
+                "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.apache.kafka/kafka-streams/3.0.0/9a76b73623b06c654d96df917026706c50a88226/kafka-streams-3.0.0.jar",
+                "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.apache.kafka/kafka-storage-api/3.0.0/548e8ae35732cc0d365412f68930b934c5527594/kafka-storage-api-3.0.0.jar",
+                "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.apache.kafka/kafka-clients/3.0.0/5301db5e9ad9f17da85a4dec06e1d313071dc9d8/kafka-clients-3.0.0.jar",
+                "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.apache.kafka/kafka-clients/3.0.0/855e87230424a6427b5a06cdc5813477bba18cff/kafka-clients-3.0.0-test.jar",
+                "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.2/25ea2e8b0c338a877313bd4672d3fe056ea78f0d/jsr305-3.0.2.jar",
+                "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-lang3/3.12.0/c6842c86792ff03b9f1d1fe2aab8dc23aa6c6f0e/commons-lang3-3.12.0.jar",
+                "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.yaml/snakeyaml/1.29/408c282043543d43086c5b5c5908a3d73679d6a0/snakeyaml-1.29-android.jar",
+                "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.yaml/snakeyaml/1.29/6d0cdafb2010f1297e574656551d7145240f6e25/snakeyaml-1.29.jar",
+                "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/com.github.mifmif/generex/1.0.2/b378f873b4e8d7616c3d920e2132cb1c87679600/generex-1.0.2.jar",
+                "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/junit/junit/4.13.2/8ac9e16d933b6fb43bc7f576336b8f4d7eb5ba12/junit-4.13.2.jar",
+                "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/com.jayway.jsonpath/json-path/2.6.0/67f565b424f7903a12d4f5b9361b11462ecacdac/json-path-2.6.0.jar",
+                "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/jakarta.xml.bind/jakarta.xml.bind-api/2.3.3/48e3b9cfc10752fba3521d6511f4165bea951801/jakarta.xml.bind-api-2.3.3.jar",
+                "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.assertj/assertj-core/3.21.0/27a14d6d22c4e3d58f799fb2a5ca8eaf53e6942a/assertj-core-3.21.0.jar",
+                "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/2.2/3f2bd07716a31c395e2837254f37f21f0f0ab24b/hamcrest-core-2.2.jar",
+                "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest/2.2/1820c0968dba3a11a1b30669bb1f01978a91dedc/hamcrest-2.2.jar",
+                "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.mockito/mockito-junit-jupiter/4.0.0/b76de25bd6e5d8f7924d0536729c0076e37e9396/mockito-junit-jupiter-4.0.0.jar",
+                "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-params/5.8.2/ddeafe92fc263f895bfb73ffeca7fd56e23c2cce/junit-jupiter-params-5.8.2.jar",
+                "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-engine/5.8.2/c598b4328d2f397194d11df3b1648d68d7d990e3/junit-jupiter-engine-5.8.2.jar",
+                "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-api/5.8.2/4c21029217adf07e4c0d0c5e192b6bf610c94bdc/junit-jupiter-api-5.8.2.jar",
+                "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.junit.platform/junit-platform-engine/1.8.2/b737de09f19864bd136805c84df7999a142fec29/junit-platform-engine-1.8.2.jar",
+                "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.junit.platform/junit-platform-commons/1.8.2/32c8b8617c1342376fd5af2053da6410d8866861/junit-platform-commons-1.8.2.jar",
+                "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter/5.8.2/5a817b1e63f1217e5c586090c45e681281f097ad/junit-jupiter-5.8.2.jar",
+                "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.mockito/mockito-core/4.0.0/f5195e0c4a45716bbd2d1d29173adbd148acce3a/mockito-core-4.0.0.jar",
+                "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.skyscreamer/jsonassert/1.5.0/6c9d5fe2f59da598d9aefc1cfc6528ff3cf32df3/jsonassert-1.5.0.jar",
+                "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.springframework/spring-test/5.3.14/770429bdf3a3823604817bb66f63b5ee8cf1050/spring-test-5.3.14.jar",
+                "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.springframework/spring-aop/5.3.14/f049146a55991e89c0f04b9624f1f69e1763d80f/spring-aop-5.3.14.jar",
+                "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.springframework/spring-beans/5.3.14/24cc27af89edc1581a57bb15bc160d2353f40a0e/spring-beans-5.3.14.jar",
+                "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.springframework/spring-expression/5.3.14/5cd4c568522b7084afac5d2ac6cb945b797b3f16/spring-expression-5.3.14.jar",
+                "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.springframework/spring-core/5.3.14/d87ad19f9d8b9a3f1a143db5a2be34c61751aaa2/spring-core-5.3.14.jar",
+                "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.xmlunit/xmlunit-core/2.8.4/35be57989ca80eefa03161b211630e319a8f36c6/xmlunit-core-2.8.4.jar",
+                "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.apache.zookeeper/zookeeper/3.6.3/a6e74f826db85ff8c51c15ef0fa2ea0b462aef25/zookeeper-3.6.3.jar",
+                "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-logging/2.6.2/58d4896c606b6ff07b9bd8e46c87eac5a51255de/spring-boot-starter-logging-2.6.2.jar",
+                "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/jakarta.annotation/jakarta.annotation-api/1.3.5/59eb84ee0d616332ff44aba065f3888cf002cd2d/jakarta.annotation-api-1.3.5.jar",
+                "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/2.13.1/1ece5a87b59701328215e0083448b4d451857cbd/jackson-datatype-jsr310-2.13.1.jar",
+                "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.module/jackson-module-parameter-names/2.13.1/cbeec2259213c555ef451a2e05f35ed1dbfbf799/jackson-module-parameter-names-2.13.1.jar",
+                "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.dataformat/jackson-dataformat-csv/2.13.1/7fb45bf309b931336be8f7615be8d47e79cc6de2/jackson-dataformat-csv-2.13.1.jar",
+                "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.module/jackson-module-scala_2.13/2.13.1/3f8237d6ecab222413b51b0a7f507e036fd72885/jackson-module-scala_2.13-2.13.1.jar",
+                "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.13.1/1cbcbe4623113e6af92ccaa89884a345270f1a87/jackson-annotations-2.13.1.jar",
+                "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.13.1/51ae921a2ed1e06ca8876f12f32f265e83c0b2b8/jackson-core-2.13.1.jar",
+                "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/2.13.1/8ecfa9bcd714269fdf22c33f9fd00d0643bd0e21/jackson-datatype-jdk8-2.13.1.jar",
+                "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.13.1/698b2d2b15d9a1b7aae025f1d9f576842285e7f6/jackson-databind-2.13.1.jar",
+                "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-websocket/9.0.56/d84be683a5d47e820d077db1d511181c7db9e4e9/tomcat-embed-websocket-9.0.56.jar",
+                "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-core/9.0.56/7c8e0008564c644beec976ab115e2670bb4d7003/tomcat-embed-core-9.0.56.jar",
+                "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-el/9.0.56/8e4f28f714693ad4e158e61f41371d4e4c6b4e23/tomcat-embed-el-9.0.56.jar",
+                "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/com.github.luben/zstd-jni/1.5.0-2/52fc9e353b4e84f8a87ebc9c5c59e58c91d5d23d/zstd-jni-1.5.0-2.jar",
+                "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.lz4/lz4-java/1.7.1/c4d931ef8ad2c9c35d65b231a33e61428472d0da/lz4-java-1.7.1.jar",
+                "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.xerial.snappy/snappy-java/1.1.8.1/d30aaf4d41d6ff0c760c8931d3b8dafc0293c91a/snappy-java-1.1.8.1.jar",
+                "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/com.yammer.metrics/metrics-core/2.2.0/f82c035cfa786d3cbec362c38c22a5f5b1bc8724/metrics-core-2.2.0.jar",
+                "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/com.typesafe.scala-logging/scala-logging_2.13/3.9.3/d97c3bcdcf6179e110af8ad2a64ca276843395c1/scala-logging_2.13-3.9.3.jar",
+                "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/io.dropwizard.metrics/metrics-core/4.2.7/f5cfd15166bd888cb3439e282517f23b5d38279e/metrics-core-4.2.7.jar",
+                "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-classic/1.2.9/7d495522b08a9a66084bf417e70eedf95ef706bc/logback-classic-1.2.9.jar",
+                "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-to-slf4j/2.17.0/e50b82411b9ce9c204c938509f914b2bb887168b/log4j-to-slf4j-2.17.0.jar",
+                "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.slf4j/jul-to-slf4j/1.7.32/8a055c04ab44e8e8326901cadf89080721348bdb/jul-to-slf4j-1.7.32.jar",
+                "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.32/cdcff33940d9f2de763bc41ea05a0be5941176c3/slf4j-api-1.7.32.jar",
+                "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/dk.brics.automaton/automaton/1.11-8/6ebfa65eb431ff4b715a23be7a750cbc4cc96d0f/automaton-1.11-8.jar",
+                "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/net.minidev/json-smart/2.4.7/8d7f4c1530c07c54930935f3da85f48b83b3c109/json-smart-2.4.7.jar",
+                "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/jakarta.activation/jakarta.activation-api/1.2.2/99f53adba383cb1bf7c3862844488574b559621f/jakarta.activation-api-1.2.2.jar",
+                "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy/1.11.22/8b4c7fa5562a09da1c2a9ab0873cb51f5034d83f/byte-buddy-1.11.22.jar",
+                "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy-agent/1.11.22/2fbcf3210dfc09b42242e3b66a5281cc5b9adb80/byte-buddy-agent-1.11.22.jar",
+                "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.objenesis/objenesis/3.2/7fadf57620c8b8abdf7519533e5527367cb51f09/objenesis-3.2.jar",
+                "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/com.vaadin.external.google/android-json/0.0.20131108.vaadin1/fa26d351fe62a6a17f5cda1287c1c6110dec413f/android-json-0.0.20131108.vaadin1.jar",
+                "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.springframework/spring-jcl/5.3.14/ffcf745ed5ba32930771378316fd08e97986bec2/spring-jcl-5.3.14.jar",
+                "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.apache.zookeeper/zookeeper-jute/3.6.3/8990d19ec3db01f45f82d4011a11b085db66de05/zookeeper-jute-3.6.3.jar",
+                "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.apache.yetus/audience-annotations/0.5.0/55762d3191a8d6610ef46d11e8cb70c7667342a3/audience-annotations-0.5.0.jar",
+                "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/io.netty/netty-handler/4.1.72.Final/9feee089fee606c64be90c0332db9aef1f7d8e46/netty-handler-4.1.72.Final.jar",
+                "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/io.netty/netty-transport-native-epoll/4.1.72.Final/a20005c2d101889d04274c5cd5ac6276c95d415e/netty-transport-native-epoll-4.1.72.Final.jar",
+                "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/net.sourceforge.argparse4j/argparse4j/0.7.0/6f0621d0c3888de39e0f06d01f37ba53a798e657/argparse4j-0.7.0.jar",
+                "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/net.sf.jopt-simple/jopt-simple/5.0.4/4fdac2fbe92dfad86aa6e9301736f6b4342a3f5c/jopt-simple-5.0.4.jar",
+                "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.scala-lang.modules/scala-collection-compat_2.13/2.4.4/9cb262981ba1fac1f25c0e7e2b285d536ec8923b/scala-collection-compat_2.13-2.4.4.jar",
+                "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.scala-lang.modules/scala-java8-compat_2.13/1.0.0/8ffac68615b438933fe27506e755d790a68b8bab/scala-java8-compat_2.13-1.0.0.jar",
+                "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-reflect/2.13.6/bb523e56c63746a5752dece28fcd702c54fd3a11/scala-reflect-2.13.6.jar",
+                "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/commons-cli/commons-cli/1.4/c51c00206bb913cd8612b24abd9fa98ae89719b1/commons-cli-1.4.jar",
+                "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-library/2.13.6/ed7a2f528c7389ea65746c22a01031613d98ab3d/scala-library-2.13.6.jar",
+                "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.opentest4j/opentest4j/1.2.0/28c11eb91f9b6d8e200631d46e20a7f407f2a046/opentest4j-1.2.0.jar",
+                "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/net.minidev/accessors-smart/2.4.7/3970cfc505e6657ca60f3aa57c849f6043000d7a/accessors-smart-2.4.7.jar",
+                "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/io.netty/netty-codec/4.1.72.Final/613c4019d687db4e9a5532564e442f83c4474ed7/netty-codec-4.1.72.Final.jar",
+                "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/io.netty/netty-transport-classes-epoll/4.1.72.Final/490c922f85c8f6a5b39bdeec1f6629d58d48eaff/netty-transport-classes-epoll-4.1.72.Final.jar",
+                "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/io.netty/netty-transport-native-unix-common/4.1.72.Final/cedc023ffdcb68543b22a1ebc7960a160589aa09/netty-transport-native-unix-common-4.1.72.Final.jar",
+                "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/io.netty/netty-transport/4.1.72.Final/99138b436a584879355aca8fe3c64b46227d5d79/netty-transport-4.1.72.Final.jar",
+                "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/io.netty/netty-resolver/4.1.72.Final/4ff458458ea32ed1156086820b624a815fcbf2c0/netty-resolver-4.1.72.Final.jar",
+                "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/io.netty/netty-buffer/4.1.72.Final/f306eec3f79541f9b8af9c471a0d5b63b7996272/netty-buffer-4.1.72.Final.jar",
+                "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/io.netty/netty-common/4.1.72.Final/a55bac9c3af5f59828207b551a96ac19bbfc341e/netty-common-4.1.72.Final.jar",
+                "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/io.netty/netty-tcnative-classes/2.0.46.Final/9937a832d9c19861822d345b48ced388b645aa5f/netty-tcnative-classes-2.0.46.Final.jar",
+                "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.rocksdb/rocksdbjni/6.19.3/54bb5df7d522a90b94f647b40d216e285f052a54/rocksdbjni-6.19.3.jar",
+                "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/com.thoughtworks.paranamer/paranamer/2.8/619eba74c19ccf1da8ebec97a2d7f8ba05773dd6/paranamer-2.8.jar",
+                "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-core/1.2.9/cdaca0cf922c5791a8efa0063ec714ca974affe3/logback-core-1.2.9.jar",
+                "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-api/2.17.0/bbd791e9c8c9421e45337c4fe0a10851c086e36c/log4j-api-2.17.0.jar",
+                "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm/9.1/a99500cf6eea30535eeac6be73899d048f8d12a8/asm-9.1.jar"
+            ]
+        },
+        "resolution": {
+            "modules": [
+                {
+                    "organization": "dk.brics.automaton",
+                    "name": "automaton",
+                    "version": "1.11-8",
+                    "artifacts": [
+                        {
+                            "name": "automaton",
+                            "classifier": "sources",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/dk.brics.automaton/automaton/1.11-8/6bc89a2a9c9c5524aa275b572c0fd3699ff7a5be/automaton-1.11-8-sources.jar"
+                        },
+                        {
+                            "name": "automaton",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/dk.brics.automaton/automaton/1.11-8/6ebfa65eb431ff4b715a23be7a750cbc4cc96d0f/automaton-1.11-8.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.tomcat.embed",
+                    "name": "tomcat-embed-core",
+                    "version": "9.0.56",
+                    "artifacts": [
+                        {
+                            "name": "tomcat-embed-core",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-core/9.0.56/7c8e0008564c644beec976ab115e2670bb4d7003/tomcat-embed-core-9.0.56.jar"
+                        },
+                        {
+                            "name": "tomcat-embed-core",
+                            "classifier": "sources",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-core/9.0.56/340f28ce58b9fcf734eb8c03f6fc6fbd48dbe86d/tomcat-embed-core-9.0.56-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.springframework",
+                    "name": "spring-messaging",
+                    "version": "5.3.14",
+                    "artifacts": [
+                        {
+                            "name": "spring-messaging",
+                            "classifier": "sources",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.springframework/spring-messaging/5.3.14/83359c21f4a4d88703b1c36a0a62d4477a2f9ee9/spring-messaging-5.3.14-sources.jar"
+                        },
+                        {
+                            "name": "spring-messaging",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.springframework/spring-messaging/5.3.14/6a8658601e6dbfc5fa95634d6eacf4c409abb4c3/spring-messaging-5.3.14.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.springframework.kafka",
+                    "name": "spring-kafka",
+                    "version": "2.8.1",
+                    "artifacts": [
+                        {
+                            "name": "spring-kafka",
+                            "classifier": "sources",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.springframework.kafka/spring-kafka/2.8.1/5144eb2f0841046ef9b918c6fd42267e87ac5807/spring-kafka-2.8.1-sources.jar"
+                        },
+                        {
+                            "name": "spring-kafka",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.springframework.kafka/spring-kafka/2.8.1/3006087c66d34b76f8eed0c6eb705f88946d55a8/spring-kafka-2.8.1.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.springframework.boot",
+                    "name": "spring-boot",
+                    "version": "2.6.2",
+                    "artifacts": [
+                        {
+                            "name": "spring-boot",
+                            "classifier": "sources",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot/2.6.2/25c8df2bc545af0b55d6878ee0975a3ec8afb7f7/spring-boot-2.6.2-sources.jar"
+                        },
+                        {
+                            "name": "spring-boot",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot/2.6.2/bbf59f411320da665411692359ff511315d0ff91/spring-boot-2.6.2.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.hamcrest",
+                    "name": "hamcrest-core",
+                    "version": "2.2",
+                    "artifacts": [
+                        {
+                            "name": "hamcrest-core",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/2.2/3f2bd07716a31c395e2837254f37f21f0f0ab24b/hamcrest-core-2.2.jar"
+                        },
+                        {
+                            "name": "hamcrest-core",
+                            "classifier": "sources",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/2.2/260c1224a39af35b0dbf85201647125f25f1b40d/hamcrest-core-2.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.kafka",
+                    "name": "kafka-storage",
+                    "version": "3.0.0",
+                    "artifacts": [
+                        {
+                            "name": "kafka-storage",
+                            "classifier": "sources",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.apache.kafka/kafka-storage/3.0.0/b4a0d483c50a4cba357a7ec0a0bf9b1686e4f319/kafka-storage-3.0.0-sources.jar"
+                        },
+                        {
+                            "name": "kafka-storage",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.apache.kafka/kafka-storage/3.0.0/749e1b31a68e6b40266bd2729fb2000f99c220f/kafka-storage-3.0.0.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.rocksdb",
+                    "name": "rocksdbjni",
+                    "version": "6.19.3",
+                    "artifacts": [
+                        {
+                            "name": "rocksdbjni",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.rocksdb/rocksdbjni/6.19.3/54bb5df7d522a90b94f647b40d216e285f052a54/rocksdbjni-6.19.3.jar"
+                        },
+                        {
+                            "name": "rocksdbjni",
+                            "classifier": "sources",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.rocksdb/rocksdbjni/6.19.3/39a2acb22abdd644194d4342b468f22f7f48874d/rocksdbjni-6.19.3-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.springframework.boot",
+                    "name": "spring-boot-starter-json",
+                    "version": "2.6.2",
+                    "artifacts": [
+                        {
+                            "name": "spring-boot-starter-json",
+                            "classifier": "sources",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-json/2.6.2/b90cd938eeffa7ba9012cad531f1e87d63ed90a7/spring-boot-starter-json-2.6.2-sources.jar"
+                        },
+                        {
+                            "name": "spring-boot-starter-json",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-json/2.6.2/c0d457ff259c487521706fd2efac75d61595d527/spring-boot-starter-json-2.6.2.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.googlecode.json-simple",
+                    "name": "json-simple",
+                    "version": "1.1.1",
+                    "artifacts": [
+                        {
+                            "name": "json-simple",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/com.googlecode.json-simple/json-simple/1.1.1/c9ad4a0850ab676c5c64461a05ca524cdfff59f1/json-simple-1.1.1.jar"
+                        },
+                        {
+                            "name": "json-simple",
+                            "classifier": "sources",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/com.googlecode.json-simple/json-simple/1.1.1/15bba08e3a239d54b68209c001f9c911559d2fed/json-simple-1.1.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.zookeeper",
+                    "name": "zookeeper",
+                    "version": "3.6.3",
+                    "artifacts": [
+                        {
+                            "name": "zookeeper",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.apache.zookeeper/zookeeper/3.6.3/a6e74f826db85ff8c51c15ef0fa2ea0b462aef25/zookeeper-3.6.3.jar"
+                        },
+                        {
+                            "name": "zookeeper",
+                            "classifier": "sources",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.apache.zookeeper/zookeeper/3.6.3/5a89f52cdd10e5d416ba6816ad787ea9d505a92f/zookeeper-3.6.3-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.hamcrest",
+                    "name": "hamcrest",
+                    "version": "2.2",
+                    "artifacts": [
+                        {
+                            "name": "hamcrest",
+                            "classifier": "sources",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest/2.2/a0a13cfc629420efb587d954f982c4c6a100da25/hamcrest-2.2-sources.jar"
+                        },
+                        {
+                            "name": "hamcrest",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest/2.2/1820c0968dba3a11a1b30669bb1f01978a91dedc/hamcrest-2.2.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty",
+                    "name": "netty-transport-classes-epoll",
+                    "version": "4.1.72.Final",
+                    "artifacts": [
+                        {
+                            "name": "netty-transport-classes-epoll",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/io.netty/netty-transport-classes-epoll/4.1.72.Final/490c922f85c8f6a5b39bdeec1f6629d58d48eaff/netty-transport-classes-epoll-4.1.72.Final.jar"
+                        },
+                        {
+                            "name": "netty-transport-classes-epoll",
+                            "classifier": "sources",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/io.netty/netty-transport-classes-epoll/4.1.72.Final/21505b43e5c5a771db807d4eb3301d42fd0a9ffc/netty-transport-classes-epoll-4.1.72.Final-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.junit.jupiter",
+                    "name": "junit-jupiter-api",
+                    "version": "5.8.2",
+                    "artifacts": [
+                        {
+                            "name": "junit-jupiter-api",
+                            "classifier": "sources",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-api/5.8.2/429d353563c5fb35a3d47076bedbf75161e976c2/junit-jupiter-api-5.8.2-sources.jar"
+                        },
+                        {
+                            "name": "junit-jupiter-api",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-api/5.8.2/4c21029217adf07e4c0d0c5e192b6bf610c94bdc/junit-jupiter-api-5.8.2.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.yetus",
+                    "name": "audience-annotations",
+                    "version": "0.5.0",
+                    "artifacts": [
+                        {
+                            "name": "audience-annotations",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.apache.yetus/audience-annotations/0.5.0/55762d3191a8d6610ef46d11e8cb70c7667342a3/audience-annotations-0.5.0.jar"
+                        },
+                        {
+                            "name": "audience-annotations",
+                            "classifier": "sources",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.apache.yetus/audience-annotations/0.5.0/51aa3138d72781ef879e9cb660daab3ac7c52c60/audience-annotations-0.5.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.springframework",
+                    "name": "spring-web",
+                    "version": "5.3.14",
+                    "artifacts": [
+                        {
+                            "name": "spring-web",
+                            "classifier": "sources",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/5.3.14/b5f276861ad36e90a362ec7991b68656ba0c6412/spring-web-5.3.14-sources.jar"
+                        },
+                        {
+                            "name": "spring-web",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/5.3.14/801d96f3914ace2e347ee3f6d29e21073e4f50ed/spring-web-5.3.14.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.yaml",
+                    "name": "snakeyaml",
+                    "version": "1.29",
+                    "artifacts": [
+                        {
+                            "name": "snakeyaml",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.yaml/snakeyaml/1.29/6d0cdafb2010f1297e574656551d7145240f6e25/snakeyaml-1.29.jar"
+                        },
+                        {
+                            "name": "snakeyaml",
+                            "classifier": "sources",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.yaml/snakeyaml/1.29/3c1e0863032828174271eb0b6a6db726e177db/snakeyaml-1.29-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.opentest4j",
+                    "name": "opentest4j",
+                    "version": "1.2.0",
+                    "artifacts": [
+                        {
+                            "name": "opentest4j",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.opentest4j/opentest4j/1.2.0/28c11eb91f9b6d8e200631d46e20a7f407f2a046/opentest4j-1.2.0.jar"
+                        },
+                        {
+                            "name": "opentest4j",
+                            "classifier": "sources",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.opentest4j/opentest4j/1.2.0/41d55b3c2254de9837b4ec8923cbd371b8a7eab5/opentest4j-1.2.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.springframework",
+                    "name": "spring-context",
+                    "version": "5.3.14",
+                    "artifacts": [
+                        {
+                            "name": "spring-context",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.springframework/spring-context/5.3.14/ce6042492f042131f602bdc83fcb412b142bdac5/spring-context-5.3.14.jar"
+                        },
+                        {
+                            "name": "spring-context",
+                            "classifier": "sources",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.springframework/spring-context/5.3.14/47ead199c83f8150c92ca3559da1e7ffc7aaf46c/spring-context-5.3.14-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.fasterxml.jackson.module",
+                    "name": "jackson-module-parameter-names",
+                    "version": "2.13.1",
+                    "artifacts": [
+                        {
+                            "name": "jackson-module-parameter-names",
+                            "classifier": "sources",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.module/jackson-module-parameter-names/2.13.1/799466d69dc742e5635ae162d898287158c1693/jackson-module-parameter-names-2.13.1-sources.jar"
+                        },
+                        {
+                            "name": "jackson-module-parameter-names",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.module/jackson-module-parameter-names/2.13.1/cbeec2259213c555ef451a2e05f35ed1dbfbf799/jackson-module-parameter-names-2.13.1.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.kafka",
+                    "name": "kafka-storage-api",
+                    "version": "3.0.0",
+                    "artifacts": [
+                        {
+                            "name": "kafka-storage-api",
+                            "classifier": "sources",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.apache.kafka/kafka-storage-api/3.0.0/e2bbc3b0d332de20a025368696eec7cb65cc78c7/kafka-storage-api-3.0.0-sources.jar"
+                        },
+                        {
+                            "name": "kafka-storage-api",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.apache.kafka/kafka-storage-api/3.0.0/548e8ae35732cc0d365412f68930b934c5527594/kafka-storage-api-3.0.0.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.tomcat.embed",
+                    "name": "tomcat-embed-websocket",
+                    "version": "9.0.56",
+                    "artifacts": [
+                        {
+                            "name": "tomcat-embed-websocket",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-websocket/9.0.56/d84be683a5d47e820d077db1d511181c7db9e4e9/tomcat-embed-websocket-9.0.56.jar"
+                        },
+                        {
+                            "name": "tomcat-embed-websocket",
+                            "classifier": "sources",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-websocket/9.0.56/40acbeaef01cd2fa9fd705d9807057ddb3b617ad/tomcat-embed-websocket-9.0.56-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.springframework.boot",
+                    "name": "spring-boot-starter-web",
+                    "version": "2.6.2",
+                    "artifacts": [
+                        {
+                            "name": "spring-boot-starter-web",
+                            "classifier": "sources",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-web/2.6.2/6ad9a18d058c52cff52246afd8a41dbe23c135fe/spring-boot-starter-web-2.6.2-sources.jar"
+                        },
+                        {
+                            "name": "spring-boot-starter-web",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-web/2.6.2/685b236afc0144a52383cd2c52731dd016f9badd/spring-boot-starter-web-2.6.2.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "net.minidev",
+                    "name": "accessors-smart",
+                    "version": "2.4.7",
+                    "artifacts": [
+                        {
+                            "name": "accessors-smart",
+                            "classifier": "sources",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/net.minidev/accessors-smart/2.4.7/6369c6c389cd6e1e1ee42d8ea8823a78decae735/accessors-smart-2.4.7-sources.jar"
+                        },
+                        {
+                            "name": "accessors-smart",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/net.minidev/accessors-smart/2.4.7/3970cfc505e6657ca60f3aa57c849f6043000d7a/accessors-smart-2.4.7.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.ow2.asm",
+                    "name": "asm",
+                    "version": "9.1",
+                    "artifacts": [
+                        {
+                            "name": "asm",
+                            "classifier": "sources",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm/9.1/3fb15dd478bf8dcb039aa0d035f9fff9e4229c61/asm-9.1-sources.jar"
+                        },
+                        {
+                            "name": "asm",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm/9.1/a99500cf6eea30535eeac6be73899d048f8d12a8/asm-9.1.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.xerial.snappy",
+                    "name": "snappy-java",
+                    "version": "1.1.8.1",
+                    "artifacts": [
+                        {
+                            "name": "snappy-java",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.xerial.snappy/snappy-java/1.1.8.1/d30aaf4d41d6ff0c760c8931d3b8dafc0293c91a/snappy-java-1.1.8.1.jar"
+                        },
+                        {
+                            "name": "snappy-java",
+                            "classifier": "sources",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.xerial.snappy/snappy-java/1.1.8.1/f522ac5bad03b20107573f15dcd99d241a3fa599/snappy-java-1.1.8.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.github.javafaker",
+                    "name": "javafaker",
+                    "version": "1.0.2",
+                    "artifacts": [
+                        {
+                            "name": "javafaker",
+                            "classifier": "sources",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/com.github.javafaker/javafaker/1.0.2/2256a91208763d62c516601857022be16523552c/javafaker-1.0.2-sources.jar"
+                        },
+                        {
+                            "name": "javafaker",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/com.github.javafaker/javafaker/1.0.2/be0ff271b1208416822db4438864df47f90af92f/javafaker-1.0.2.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "net.sf.jopt-simple",
+                    "name": "jopt-simple",
+                    "version": "5.0.4",
+                    "artifacts": [
+                        {
+                            "name": "jopt-simple",
+                            "classifier": "sources",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/net.sf.jopt-simple/jopt-simple/5.0.4/950831646d014c9162999019a3cb17d5fc01ac0d/jopt-simple-5.0.4-sources.jar"
+                        },
+                        {
+                            "name": "jopt-simple",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/net.sf.jopt-simple/jopt-simple/5.0.4/4fdac2fbe92dfad86aa6e9301736f6b4342a3f5c/jopt-simple-5.0.4.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.assertj",
+                    "name": "assertj-core",
+                    "version": "3.21.0",
+                    "artifacts": [
+                        {
+                            "name": "assertj-core",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.assertj/assertj-core/3.21.0/27a14d6d22c4e3d58f799fb2a5ca8eaf53e6942a/assertj-core-3.21.0.jar"
+                        },
+                        {
+                            "name": "assertj-core",
+                            "classifier": "sources",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.assertj/assertj-core/3.21.0/906e45ec2b27474605d3daa5f00519a9a74cbf64/assertj-core-3.21.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "jakarta.xml.bind",
+                    "name": "jakarta.xml.bind-api",
+                    "version": "2.3.3",
+                    "artifacts": [
+                        {
+                            "name": "jakarta.xml.bind-api",
+                            "classifier": "sources",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/jakarta.xml.bind/jakarta.xml.bind-api/2.3.3/d83744bae211a4072c39f007000a13f501a88395/jakarta.xml.bind-api-2.3.3-sources.jar"
+                        },
+                        {
+                            "name": "jakarta.xml.bind-api",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/jakarta.xml.bind/jakarta.xml.bind-api/2.3.3/48e3b9cfc10752fba3521d6511f4165bea951801/jakarta.xml.bind-api-2.3.3.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.springframework",
+                    "name": "spring-aop",
+                    "version": "5.3.14",
+                    "artifacts": [
+                        {
+                            "name": "spring-aop",
+                            "classifier": "sources",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.springframework/spring-aop/5.3.14/c99f5a875d0bdf46f54f1006cea7627954ec8a03/spring-aop-5.3.14-sources.jar"
+                        },
+                        {
+                            "name": "spring-aop",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.springframework/spring-aop/5.3.14/f049146a55991e89c0f04b9624f1f69e1763d80f/spring-aop-5.3.14.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.skyscreamer",
+                    "name": "jsonassert",
+                    "version": "1.5.0",
+                    "artifacts": [
+                        {
+                            "name": "jsonassert",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.skyscreamer/jsonassert/1.5.0/6c9d5fe2f59da598d9aefc1cfc6528ff3cf32df3/jsonassert-1.5.0.jar"
+                        },
+                        {
+                            "name": "jsonassert",
+                            "classifier": "sources",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.skyscreamer/jsonassert/1.5.0/d729b258165a2fd9b5d6156c05c4c4f7ca053117/jsonassert-1.5.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.logging.log4j",
+                    "name": "log4j-api",
+                    "version": "2.17.0",
+                    "artifacts": [
+                        {
+                            "name": "log4j-api",
+                            "classifier": "sources",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-api/2.17.0/9082ee1815f0c0052e8b981159ec836cc45487cd/log4j-api-2.17.0-sources.jar"
+                        },
+                        {
+                            "name": "log4j-api",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-api/2.17.0/bbd791e9c8c9421e45337c4fe0a10851c086e36c/log4j-api-2.17.0.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-lang",
+                    "name": "scala-library",
+                    "version": "2.13.6",
+                    "artifacts": [
+                        {
+                            "name": "scala-library",
+                            "classifier": "sources",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-library/2.13.6/676a27724b92adf5e0080b3c75b7ba8dd0a0db71/scala-library-2.13.6-sources.jar"
+                        },
+                        {
+                            "name": "scala-library",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-library/2.13.6/ed7a2f528c7389ea65746c22a01031613d98ab3d/scala-library-2.13.6.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.fasterxml.jackson.module",
+                    "name": "jackson-module-scala_2.13",
+                    "version": "2.13.1",
+                    "artifacts": [
+                        {
+                            "name": "jackson-module-scala_2.13",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.module/jackson-module-scala_2.13/2.13.1/3f8237d6ecab222413b51b0a7f507e036fd72885/jackson-module-scala_2.13-2.13.1.jar"
+                        },
+                        {
+                            "name": "jackson-module-scala_2.13",
+                            "classifier": "sources",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.module/jackson-module-scala_2.13/2.13.1/22223c54bd024c1586497960807ee515f200d023/jackson-module-scala_2.13-2.13.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.tomcat.embed",
+                    "name": "tomcat-embed-el",
+                    "version": "9.0.56",
+                    "artifacts": [
+                        {
+                            "name": "tomcat-embed-el",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-el/9.0.56/8e4f28f714693ad4e158e61f41371d4e4c6b4e23/tomcat-embed-el-9.0.56.jar"
+                        },
+                        {
+                            "name": "tomcat-embed-el",
+                            "classifier": "sources",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-el/9.0.56/fa8de95bcd41f4afaa05035da7cef004b23c5171/tomcat-embed-el-9.0.56-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.jayway.jsonpath",
+                    "name": "json-path",
+                    "version": "2.6.0",
+                    "artifacts": [
+                        {
+                            "name": "json-path",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/com.jayway.jsonpath/json-path/2.6.0/67f565b424f7903a12d4f5b9361b11462ecacdac/json-path-2.6.0.jar"
+                        },
+                        {
+                            "name": "json-path",
+                            "classifier": "sources",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/com.jayway.jsonpath/json-path/2.6.0/323b2e72e7fea07dea282c1ec808531e525bb790/json-path-2.6.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.junit.jupiter",
+                    "name": "junit-jupiter-engine",
+                    "version": "5.8.2",
+                    "artifacts": [
+                        {
+                            "name": "junit-jupiter-engine",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-engine/5.8.2/c598b4328d2f397194d11df3b1648d68d7d990e3/junit-jupiter-engine-5.8.2.jar"
+                        },
+                        {
+                            "name": "junit-jupiter-engine",
+                            "classifier": "sources",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-engine/5.8.2/ea87fe3d752e24397f71f347872e79a89c61a704/junit-jupiter-engine-5.8.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty",
+                    "name": "netty-buffer",
+                    "version": "4.1.72.Final",
+                    "artifacts": [
+                        {
+                            "name": "netty-buffer",
+                            "classifier": "sources",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/io.netty/netty-buffer/4.1.72.Final/fc40b69ba96a20d8e825783a1ed4851c9338412b/netty-buffer-4.1.72.Final-sources.jar"
+                        },
+                        {
+                            "name": "netty-buffer",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/io.netty/netty-buffer/4.1.72.Final/f306eec3f79541f9b8af9c471a0d5b63b7996272/netty-buffer-4.1.72.Final.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty",
+                    "name": "netty-handler",
+                    "version": "4.1.72.Final",
+                    "artifacts": [
+                        {
+                            "name": "netty-handler",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/io.netty/netty-handler/4.1.72.Final/9feee089fee606c64be90c0332db9aef1f7d8e46/netty-handler-4.1.72.Final.jar"
+                        },
+                        {
+                            "name": "netty-handler",
+                            "classifier": "sources",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/io.netty/netty-handler/4.1.72.Final/e6cb39d83949f1fd6d7e7ea85275e25953ed2b3b/netty-handler-4.1.72.Final-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty",
+                    "name": "netty-resolver",
+                    "version": "4.1.72.Final",
+                    "artifacts": [
+                        {
+                            "name": "netty-resolver",
+                            "classifier": "sources",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/io.netty/netty-resolver/4.1.72.Final/edbe99a53064b925fbbf9d85d01373cc35422aa5/netty-resolver-4.1.72.Final-sources.jar"
+                        },
+                        {
+                            "name": "netty-resolver",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/io.netty/netty-resolver/4.1.72.Final/4ff458458ea32ed1156086820b624a815fcbf2c0/netty-resolver-4.1.72.Final.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.junit.jupiter",
+                    "name": "junit-jupiter",
+                    "version": "5.8.2",
+                    "artifacts": [
+                        {
+                            "name": "junit-jupiter",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter/5.8.2/5a817b1e63f1217e5c586090c45e681281f097ad/junit-jupiter-5.8.2.jar"
+                        },
+                        {
+                            "name": "junit-jupiter",
+                            "classifier": "sources",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter/5.8.2/5fd01c33132462aab3905cb74bd1097a713ab91a/junit-jupiter-5.8.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.springframework",
+                    "name": "spring-core",
+                    "version": "5.3.14",
+                    "artifacts": [
+                        {
+                            "name": "spring-core",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.springframework/spring-core/5.3.14/d87ad19f9d8b9a3f1a143db5a2be34c61751aaa2/spring-core-5.3.14.jar"
+                        },
+                        {
+                            "name": "spring-core",
+                            "classifier": "sources",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.springframework/spring-core/5.3.14/7ef9f98212ce42bbac3c5dfda92a5d8411acab38/spring-core-5.3.14-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.yammer.metrics",
+                    "name": "metrics-core",
+                    "version": "2.2.0",
+                    "artifacts": [
+                        {
+                            "name": "metrics-core",
+                            "classifier": "sources",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/com.yammer.metrics/metrics-core/2.2.0/6bdc9ec38b662632d7597d6f22942fb2dd2f5c4d/metrics-core-2.2.0-sources.jar"
+                        },
+                        {
+                            "name": "metrics-core",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/com.yammer.metrics/metrics-core/2.2.0/f82c035cfa786d3cbec362c38c22a5f5b1bc8724/metrics-core-2.2.0.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.junit.platform",
+                    "name": "junit-platform-commons",
+                    "version": "1.8.2",
+                    "artifacts": [
+                        {
+                            "name": "junit-platform-commons",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.junit.platform/junit-platform-commons/1.8.2/32c8b8617c1342376fd5af2053da6410d8866861/junit-platform-commons-1.8.2.jar"
+                        },
+                        {
+                            "name": "junit-platform-commons",
+                            "classifier": "sources",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.junit.platform/junit-platform-commons/1.8.2/386b61876dd33d0ef0381189d3c1db9455d99659/junit-platform-commons-1.8.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "commons-cli",
+                    "name": "commons-cli",
+                    "version": "1.4",
+                    "artifacts": [
+                        {
+                            "name": "commons-cli",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/commons-cli/commons-cli/1.4/c51c00206bb913cd8612b24abd9fa98ae89719b1/commons-cli-1.4.jar"
+                        },
+                        {
+                            "name": "commons-cli",
+                            "classifier": "sources",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/commons-cli/commons-cli/1.4/40dfd9fdef125e19136135e68d54af6d9b0cfbb8/commons-cli-1.4-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.slf4j",
+                    "name": "jul-to-slf4j",
+                    "version": "1.7.32",
+                    "artifacts": [
+                        {
+                            "name": "jul-to-slf4j",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.slf4j/jul-to-slf4j/1.7.32/8a055c04ab44e8e8326901cadf89080721348bdb/jul-to-slf4j-1.7.32.jar"
+                        },
+                        {
+                            "name": "jul-to-slf4j",
+                            "classifier": "sources",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.slf4j/jul-to-slf4j/1.7.32/d03fa92a2a508b5595b896b93f13f04bcde11171/jul-to-slf4j-1.7.32-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty",
+                    "name": "netty-transport-native-epoll",
+                    "version": "4.1.72.Final",
+                    "artifacts": [
+                        {
+                            "name": "netty-transport-native-epoll",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/io.netty/netty-transport-native-epoll/4.1.72.Final/a20005c2d101889d04274c5cd5ac6276c95d415e/netty-transport-native-epoll-4.1.72.Final.jar"
+                        },
+                        {
+                            "name": "netty-transport-native-epoll",
+                            "classifier": "sources",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/io.netty/netty-transport-native-epoll/4.1.72.Final/4cc655a56ef2848a0fd4bcd75f3b2b6090c637da/netty-transport-native-epoll-4.1.72.Final-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "ch.qos.logback",
+                    "name": "logback-classic",
+                    "version": "1.2.9",
+                    "artifacts": [
+                        {
+                            "name": "logback-classic",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-classic/1.2.9/7d495522b08a9a66084bf417e70eedf95ef706bc/logback-classic-1.2.9.jar"
+                        },
+                        {
+                            "name": "logback-classic",
+                            "classifier": "sources",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-classic/1.2.9/e62ec78303270aefa40721154dc591b9c86072b8/logback-classic-1.2.9-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.commons",
+                    "name": "commons-lang3",
+                    "version": "3.12.0",
+                    "artifacts": [
+                        {
+                            "name": "commons-lang3",
+                            "classifier": "sources",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-lang3/3.12.0/198b882fdc2c72c89c63401d946f6ba46c3acea3/commons-lang3-3.12.0-sources.jar"
+                        },
+                        {
+                            "name": "commons-lang3",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-lang3/3.12.0/c6842c86792ff03b9f1d1fe2aab8dc23aa6c6f0e/commons-lang3-3.12.0.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.springframework.retry",
+                    "name": "spring-retry",
+                    "version": "1.3.1",
+                    "artifacts": [
+                        {
+                            "name": "spring-retry",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.springframework.retry/spring-retry/1.3.1/f8644c86f2be54623c3b336a56b54216841a3f22/spring-retry-1.3.1.jar"
+                        },
+                        {
+                            "name": "spring-retry",
+                            "classifier": "sources",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.springframework.retry/spring-retry/1.3.1/f1350567cc522c039162a8fd87bfeae7dfca9c63/spring-retry-1.3.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.kafka",
+                    "name": "kafka-raft",
+                    "version": "3.0.0",
+                    "artifacts": [
+                        {
+                            "name": "kafka-raft",
+                            "classifier": "sources",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.apache.kafka/kafka-raft/3.0.0/5950b9f9bc92628aa4fa0b7a66886d1f9f0dbba3/kafka-raft-3.0.0-sources.jar"
+                        },
+                        {
+                            "name": "kafka-raft",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.apache.kafka/kafka-raft/3.0.0/18a25c1d7bbb9a107438148dc6dc4b48ad264495/kafka-raft-3.0.0.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.mockito",
+                    "name": "mockito-core",
+                    "version": "4.0.0",
+                    "artifacts": [
+                        {
+                            "name": "mockito-core",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.mockito/mockito-core/4.0.0/f5195e0c4a45716bbd2d1d29173adbd148acce3a/mockito-core-4.0.0.jar"
+                        },
+                        {
+                            "name": "mockito-core",
+                            "classifier": "sources",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.mockito/mockito-core/4.0.0/7350016b49c3ffca18b5ef4b664e730bd99cd054/mockito-core-4.0.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "junit",
+                    "name": "junit",
+                    "version": "4.13.2",
+                    "artifacts": [
+                        {
+                            "name": "junit",
+                            "classifier": "sources",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/junit/junit/4.13.2/33987872a811fe4d4001ed494b07854822257f42/junit-4.13.2-sources.jar"
+                        },
+                        {
+                            "name": "junit",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/junit/junit/4.13.2/8ac9e16d933b6fb43bc7f576336b8f4d7eb5ba12/junit-4.13.2.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.springframework",
+                    "name": "spring-expression",
+                    "version": "5.3.14",
+                    "artifacts": [
+                        {
+                            "name": "spring-expression",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.springframework/spring-expression/5.3.14/5cd4c568522b7084afac5d2ac6cb945b797b3f16/spring-expression-5.3.14.jar"
+                        },
+                        {
+                            "name": "spring-expression",
+                            "classifier": "sources",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.springframework/spring-expression/5.3.14/37a8fb2fede4ec7c63fa3365c056947c04bcfab2/spring-expression-5.3.14-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.kafka",
+                    "name": "kafka-clients",
+                    "version": "3.0.0",
+                    "artifacts": [
+                        {
+                            "name": "kafka-clients",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.apache.kafka/kafka-clients/3.0.0/855e87230424a6427b5a06cdc5813477bba18cff/kafka-clients-3.0.0-test.jar"
+                        },
+                        {
+                            "name": "kafka-clients",
+                            "classifier": "sources",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.apache.kafka/kafka-clients/3.0.0/ab7f5e4c05d2caff86784352e6fa74751f91d3a6/kafka-clients-3.0.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.dropwizard.metrics",
+                    "name": "metrics-core",
+                    "version": "4.2.7",
+                    "artifacts": [
+                        {
+                            "name": "metrics-core",
+                            "classifier": "sources",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/io.dropwizard.metrics/metrics-core/4.2.7/8106e9794b0bc2e8ebf424ee9ac48d20e45aeb4b/metrics-core-4.2.7-sources.jar"
+                        },
+                        {
+                            "name": "metrics-core",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/io.dropwizard.metrics/metrics-core/4.2.7/f5cfd15166bd888cb3439e282517f23b5d38279e/metrics-core-4.2.7.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.springframework",
+                    "name": "spring-webmvc",
+                    "version": "5.3.14",
+                    "artifacts": [
+                        {
+                            "name": "spring-webmvc",
+                            "classifier": "sources",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.springframework/spring-webmvc/5.3.14/ecbb7aff3e03ba0c2c4901bbb766f6108d441738/spring-webmvc-5.3.14-sources.jar"
+                        },
+                        {
+                            "name": "spring-webmvc",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.springframework/spring-webmvc/5.3.14/beb6dc57abf6685878b824d8ab0af39ebd1cfbae/spring-webmvc-5.3.14.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.fasterxml.jackson.dataformat",
+                    "name": "jackson-dataformat-csv",
+                    "version": "2.13.1",
+                    "artifacts": [
+                        {
+                            "name": "jackson-dataformat-csv",
+                            "classifier": "sources",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.dataformat/jackson-dataformat-csv/2.13.1/2e418065b4bb7cbfac2540b8c945dce9c83b329d/jackson-dataformat-csv-2.13.1-sources.jar"
+                        },
+                        {
+                            "name": "jackson-dataformat-csv",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.dataformat/jackson-dataformat-csv/2.13.1/7fb45bf309b931336be8f7615be8d47e79cc6de2/jackson-dataformat-csv-2.13.1.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty",
+                    "name": "netty-common",
+                    "version": "4.1.72.Final",
+                    "artifacts": [
+                        {
+                            "name": "netty-common",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/io.netty/netty-common/4.1.72.Final/a55bac9c3af5f59828207b551a96ac19bbfc341e/netty-common-4.1.72.Final.jar"
+                        },
+                        {
+                            "name": "netty-common",
+                            "classifier": "sources",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/io.netty/netty-common/4.1.72.Final/d9b2d1efdc42fd2449739de0f73360324fbcdbd6/netty-common-4.1.72.Final-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "net.bytebuddy",
+                    "name": "byte-buddy",
+                    "version": "1.11.22",
+                    "artifacts": [
+                        {
+                            "name": "byte-buddy",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy/1.11.22/8b4c7fa5562a09da1c2a9ab0873cb51f5034d83f/byte-buddy-1.11.22.jar"
+                        },
+                        {
+                            "name": "byte-buddy",
+                            "classifier": "sources",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy/1.11.22/70c06cf42a26f38acec9409f4c24b2963fc098b2/byte-buddy-1.11.22-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "jakarta.annotation",
+                    "name": "jakarta.annotation-api",
+                    "version": "1.3.5",
+                    "artifacts": [
+                        {
+                            "name": "jakarta.annotation-api",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/jakarta.annotation/jakarta.annotation-api/1.3.5/59eb84ee0d616332ff44aba065f3888cf002cd2d/jakarta.annotation-api-1.3.5.jar"
+                        },
+                        {
+                            "name": "jakarta.annotation-api",
+                            "classifier": "sources",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/jakarta.annotation/jakarta.annotation-api/1.3.5/1ad35f11d17abb52426bfe15ea7b4c583795012/jakarta.annotation-api-1.3.5-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.github.mifmif",
+                    "name": "generex",
+                    "version": "1.0.2",
+                    "artifacts": [
+                        {
+                            "name": "generex",
+                            "classifier": "sources",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/com.github.mifmif/generex/1.0.2/d1f52c4efe0b20154faf35f8df5c08a234dc41db/generex-1.0.2-sources.jar"
+                        },
+                        {
+                            "name": "generex",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/com.github.mifmif/generex/1.0.2/b378f873b4e8d7616c3d920e2132cb1c87679600/generex-1.0.2.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty",
+                    "name": "netty-transport-native-unix-common",
+                    "version": "4.1.72.Final",
+                    "artifacts": [
+                        {
+                            "name": "netty-transport-native-unix-common",
+                            "classifier": "sources",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/io.netty/netty-transport-native-unix-common/4.1.72.Final/cbf201c44c2b478db6bcf3bef511bd4a068464ab/netty-transport-native-unix-common-4.1.72.Final-sources.jar"
+                        },
+                        {
+                            "name": "netty-transport-native-unix-common",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/io.netty/netty-transport-native-unix-common/4.1.72.Final/cedc023ffdcb68543b22a1ebc7960a160589aa09/netty-transport-native-unix-common-4.1.72.Final.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.springframework",
+                    "name": "spring-tx",
+                    "version": "5.3.14",
+                    "artifacts": [
+                        {
+                            "name": "spring-tx",
+                            "classifier": "sources",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.springframework/spring-tx/5.3.14/2eadb2cf0d08905b9f21a19fc27f7fe02451422a/spring-tx-5.3.14-sources.jar"
+                        },
+                        {
+                            "name": "spring-tx",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.springframework/spring-tx/5.3.14/3d80a1e051f071e9cd42fc99698bf9022862b5c/spring-tx-5.3.14.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.springframework.boot",
+                    "name": "spring-boot-test-autoconfigure",
+                    "version": "2.6.2",
+                    "artifacts": [
+                        {
+                            "name": "spring-boot-test-autoconfigure",
+                            "classifier": "sources",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-test-autoconfigure/2.6.2/6d6e8675995b6df689624a90b81f9d5dadadf110/spring-boot-test-autoconfigure-2.6.2-sources.jar"
+                        },
+                        {
+                            "name": "spring-boot-test-autoconfigure",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-test-autoconfigure/2.6.2/15d178e8e69f3edefe6b17d4cbcb21e921c69463/spring-boot-test-autoconfigure-2.6.2.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.kafka",
+                    "name": "kafka_2.13",
+                    "version": "3.0.0",
+                    "artifacts": [
+                        {
+                            "name": "kafka_2.13",
+                            "classifier": "sources",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.apache.kafka/kafka_2.13/3.0.0/5f35414c2bb921bf00b39e290480d432f168aeec/kafka_2.13-3.0.0-sources.jar"
+                        },
+                        {
+                            "name": "kafka_2.13",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.apache.kafka/kafka_2.13/3.0.0/7e38b72a27cbb81b3457f0979e83a1121be9c6c4/kafka_2.13-3.0.0-test.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.logging.log4j",
+                    "name": "log4j-to-slf4j",
+                    "version": "2.17.0",
+                    "artifacts": [
+                        {
+                            "name": "log4j-to-slf4j",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-to-slf4j/2.17.0/e50b82411b9ce9c204c938509f914b2bb887168b/log4j-to-slf4j-2.17.0.jar"
+                        },
+                        {
+                            "name": "log4j-to-slf4j",
+                            "classifier": "sources",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-to-slf4j/2.17.0/c60e002116c3314fb2eff0c3063fd3f929101499/log4j-to-slf4j-2.17.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "jakarta.activation",
+                    "name": "jakarta.activation-api",
+                    "version": "1.2.2",
+                    "artifacts": [
+                        {
+                            "name": "jakarta.activation-api",
+                            "classifier": "sources",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/jakarta.activation/jakarta.activation-api/1.2.2/c45b5962230be8a5f93759203870c98917bb8b31/jakarta.activation-api-1.2.2-sources.jar"
+                        },
+                        {
+                            "name": "jakarta.activation-api",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/jakarta.activation/jakarta.activation-api/1.2.2/99f53adba383cb1bf7c3862844488574b559621f/jakarta.activation-api-1.2.2.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.zookeeper",
+                    "name": "zookeeper-jute",
+                    "version": "3.6.3",
+                    "artifacts": [
+                        {
+                            "name": "zookeeper-jute",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.apache.zookeeper/zookeeper-jute/3.6.3/8990d19ec3db01f45f82d4011a11b085db66de05/zookeeper-jute-3.6.3.jar"
+                        },
+                        {
+                            "name": "zookeeper-jute",
+                            "classifier": "sources",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.apache.zookeeper/zookeeper-jute/3.6.3/e0000c31d865ab735e811484e8e39fff8288381a/zookeeper-jute-3.6.3-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-lang",
+                    "name": "scala-reflect",
+                    "version": "2.13.6",
+                    "artifacts": [
+                        {
+                            "name": "scala-reflect",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-reflect/2.13.6/bb523e56c63746a5752dece28fcd702c54fd3a11/scala-reflect-2.13.6.jar"
+                        },
+                        {
+                            "name": "scala-reflect",
+                            "classifier": "sources",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-reflect/2.13.6/c2015b32e85962fcad12d361ee1f2876f03edfa6/scala-reflect-2.13.6-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.junit.platform",
+                    "name": "junit-platform-engine",
+                    "version": "1.8.2",
+                    "artifacts": [
+                        {
+                            "name": "junit-platform-engine",
+                            "classifier": "sources",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.junit.platform/junit-platform-engine/1.8.2/ef25ff956479198a71a7d1b23e11f27fb09393b6/junit-platform-engine-1.8.2-sources.jar"
+                        },
+                        {
+                            "name": "junit-platform-engine",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.junit.platform/junit-platform-engine/1.8.2/b737de09f19864bd136805c84df7999a142fec29/junit-platform-engine-1.8.2.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.fasterxml.jackson.core",
+                    "name": "jackson-core",
+                    "version": "2.13.1",
+                    "artifacts": [
+                        {
+                            "name": "jackson-core",
+                            "classifier": "sources",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.13.1/2d0c5c66616d6a57ad6282078249df816b3b2ed2/jackson-core-2.13.1-sources.jar"
+                        },
+                        {
+                            "name": "jackson-core",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.13.1/51ae921a2ed1e06ca8876f12f32f265e83c0b2b8/jackson-core-2.13.1.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.google.code.findbugs",
+                    "name": "jsr305",
+                    "version": "3.0.2",
+                    "artifacts": [
+                        {
+                            "name": "jsr305",
+                            "classifier": "sources",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.2/b19b5927c2c25b6c70f093767041e641ae0b1b35/jsr305-3.0.2-sources.jar"
+                        },
+                        {
+                            "name": "jsr305",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.2/25ea2e8b0c338a877313bd4672d3fe056ea78f0d/jsr305-3.0.2.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.typesafe.scala-logging",
+                    "name": "scala-logging_2.13",
+                    "version": "3.9.3",
+                    "artifacts": [
+                        {
+                            "name": "scala-logging_2.13",
+                            "classifier": "sources",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/com.typesafe.scala-logging/scala-logging_2.13/3.9.3/e4375225373412ac0c7bde368ef42ff8f4a0e7eb/scala-logging_2.13-3.9.3-sources.jar"
+                        },
+                        {
+                            "name": "scala-logging_2.13",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/com.typesafe.scala-logging/scala-logging_2.13/3.9.3/d97c3bcdcf6179e110af8ad2a64ca276843395c1/scala-logging_2.13-3.9.3.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.mockito",
+                    "name": "mockito-junit-jupiter",
+                    "version": "4.0.0",
+                    "artifacts": [
+                        {
+                            "name": "mockito-junit-jupiter",
+                            "classifier": "sources",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.mockito/mockito-junit-jupiter/4.0.0/6aa189452f42167be3dc9ce5ac029df0f15ba0e5/mockito-junit-jupiter-4.0.0-sources.jar"
+                        },
+                        {
+                            "name": "mockito-junit-jupiter",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.mockito/mockito-junit-jupiter/4.0.0/b76de25bd6e5d8f7924d0536729c0076e37e9396/mockito-junit-jupiter-4.0.0.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.springframework.boot",
+                    "name": "spring-boot-starter-logging",
+                    "version": "2.6.2",
+                    "artifacts": [
+                        {
+                            "name": "spring-boot-starter-logging",
+                            "classifier": "sources",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-logging/2.6.2/c574ad9a7299d1a2e17848b5d85e8a224c271451/spring-boot-starter-logging-2.6.2-sources.jar"
+                        },
+                        {
+                            "name": "spring-boot-starter-logging",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-logging/2.6.2/58d4896c606b6ff07b9bd8e46c87eac5a51255de/spring-boot-starter-logging-2.6.2.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.projectlombok",
+                    "name": "lombok",
+                    "version": "1.18.22",
+                    "artifacts": [
+                        {
+                            "name": "lombok",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.projectlombok/lombok/1.18.22/9c08ea24c6eb714e2d6170e8122c069a0ba9aacf/lombok-1.18.22.jar"
+                        },
+                        {
+                            "name": "lombok",
+                            "classifier": "sources",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.projectlombok/lombok/1.18.22/764fbcf20fe348c23338b3f8a7373c9e7d206956/lombok-1.18.22-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.springframework.boot",
+                    "name": "spring-boot-starter-tomcat",
+                    "version": "2.6.2",
+                    "artifacts": [
+                        {
+                            "name": "spring-boot-starter-tomcat",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-tomcat/2.6.2/81bc9a57c0df9787e122c3b2a66e5a1ac0e139a5/spring-boot-starter-tomcat-2.6.2.jar"
+                        },
+                        {
+                            "name": "spring-boot-starter-tomcat",
+                            "classifier": "sources",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-tomcat/2.6.2/946f198c4075b16f4685ff470059cf4bce1c6180/spring-boot-starter-tomcat-2.6.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.springframework",
+                    "name": "spring-beans",
+                    "version": "5.3.14",
+                    "artifacts": [
+                        {
+                            "name": "spring-beans",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.springframework/spring-beans/5.3.14/24cc27af89edc1581a57bb15bc160d2353f40a0e/spring-beans-5.3.14.jar"
+                        },
+                        {
+                            "name": "spring-beans",
+                            "classifier": "sources",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.springframework/spring-beans/5.3.14/2fcc985cf7fa8b57098786216ff3bf6c90d939d0/spring-beans-5.3.14-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.springframework.boot",
+                    "name": "spring-boot-starter-test",
+                    "version": "2.6.2",
+                    "artifacts": [
+                        {
+                            "name": "spring-boot-starter-test",
+                            "classifier": "sources",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-test/2.6.2/55423a537ede35368b144ed60cb2a02fb7f5dffb/spring-boot-starter-test-2.6.2-sources.jar"
+                        },
+                        {
+                            "name": "spring-boot-starter-test",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-test/2.6.2/17c687f9e596262705ff31e85fc6b700a9c4afc0/spring-boot-starter-test-2.6.2.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.objenesis",
+                    "name": "objenesis",
+                    "version": "3.2",
+                    "artifacts": [
+                        {
+                            "name": "objenesis",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.objenesis/objenesis/3.2/7fadf57620c8b8abdf7519533e5527367cb51f09/objenesis-3.2.jar"
+                        },
+                        {
+                            "name": "objenesis",
+                            "classifier": "sources",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.objenesis/objenesis/3.2/9f5da90020a255f25b6d8da8db273e2d38ce9805/objenesis-3.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.fasterxml.jackson.datatype",
+                    "name": "jackson-datatype-jdk8",
+                    "version": "2.13.1",
+                    "artifacts": [
+                        {
+                            "name": "jackson-datatype-jdk8",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/2.13.1/8ecfa9bcd714269fdf22c33f9fd00d0643bd0e21/jackson-datatype-jdk8-2.13.1.jar"
+                        },
+                        {
+                            "name": "jackson-datatype-jdk8",
+                            "classifier": "sources",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/2.13.1/6cfe94d1cdfb2c628563bc5ebafbb1704075db18/jackson-datatype-jdk8-2.13.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.kafka",
+                    "name": "kafka-metadata",
+                    "version": "3.0.0",
+                    "artifacts": [
+                        {
+                            "name": "kafka-metadata",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.apache.kafka/kafka-metadata/3.0.0/5a2b9a154d5530c4036ac405ac8bff981981621c/kafka-metadata-3.0.0.jar"
+                        },
+                        {
+                            "name": "kafka-metadata",
+                            "classifier": "sources",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.apache.kafka/kafka-metadata/3.0.0/4354b1d7b1356436eb78c29efa4b43890a2f41e7/kafka-metadata-3.0.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.springframework",
+                    "name": "spring-jcl",
+                    "version": "5.3.14",
+                    "artifacts": [
+                        {
+                            "name": "spring-jcl",
+                            "classifier": "sources",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.springframework/spring-jcl/5.3.14/fce232a0afc54ced15099670e487a2c5763f4df1/spring-jcl-5.3.14-sources.jar"
+                        },
+                        {
+                            "name": "spring-jcl",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.springframework/spring-jcl/5.3.14/ffcf745ed5ba32930771378316fd08e97986bec2/spring-jcl-5.3.14.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.lz4",
+                    "name": "lz4-java",
+                    "version": "1.7.1",
+                    "artifacts": [
+                        {
+                            "name": "lz4-java",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.lz4/lz4-java/1.7.1/c4d931ef8ad2c9c35d65b231a33e61428472d0da/lz4-java-1.7.1.jar"
+                        },
+                        {
+                            "name": "lz4-java",
+                            "classifier": "sources",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.lz4/lz4-java/1.7.1/1a37e596d5e62bd94000c6f0b5e3989f3b8d6a67/lz4-java-1.7.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.fasterxml.jackson.datatype",
+                    "name": "jackson-datatype-jsr310",
+                    "version": "2.13.1",
+                    "artifacts": [
+                        {
+                            "name": "jackson-datatype-jsr310",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/2.13.1/1ece5a87b59701328215e0083448b4d451857cbd/jackson-datatype-jsr310-2.13.1.jar"
+                        },
+                        {
+                            "name": "jackson-datatype-jsr310",
+                            "classifier": "sources",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/2.13.1/307ccdff973261630dbd20623aabf34906535e74/jackson-datatype-jsr310-2.13.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.springframework.boot",
+                    "name": "spring-boot-starter",
+                    "version": "2.6.2",
+                    "artifacts": [
+                        {
+                            "name": "spring-boot-starter",
+                            "classifier": "sources",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter/2.6.2/73c78b554d3aec9156752bc0b31675f5b40ad1f0/spring-boot-starter-2.6.2-sources.jar"
+                        },
+                        {
+                            "name": "spring-boot-starter",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter/2.6.2/c36f1f6886cdbedc5347fdea62b97b44b053b0ba/spring-boot-starter-2.6.2.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "net.sourceforge.argparse4j",
+                    "name": "argparse4j",
+                    "version": "0.7.0",
+                    "artifacts": [
+                        {
+                            "name": "argparse4j",
+                            "classifier": "sources",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/net.sourceforge.argparse4j/argparse4j/0.7.0/dc5e5b48261b5eb12c2804561a98f1fbc287bc07/argparse4j-0.7.0-sources.jar"
+                        },
+                        {
+                            "name": "argparse4j",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/net.sourceforge.argparse4j/argparse4j/0.7.0/6f0621d0c3888de39e0f06d01f37ba53a798e657/argparse4j-0.7.0.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.kafka",
+                    "name": "kafka_2.13",
+                    "version": "3.0.0",
+                    "artifacts": [
+                        {
+                            "name": "kafka_2.13",
+                            "classifier": "sources",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.apache.kafka/kafka_2.13/3.0.0/5f35414c2bb921bf00b39e290480d432f168aeec/kafka_2.13-3.0.0-sources.jar"
+                        },
+                        {
+                            "name": "kafka_2.13",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.apache.kafka/kafka_2.13/3.0.0/7277dc596c429bcd349983a5ae92f46a5e0c80d/kafka_2.13-3.0.0.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.springframework.boot",
+                    "name": "spring-boot-test",
+                    "version": "2.6.2",
+                    "artifacts": [
+                        {
+                            "name": "spring-boot-test",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-test/2.6.2/c4ac845e842f67003571343181fe432e09e04d6d/spring-boot-test-2.6.2.jar"
+                        },
+                        {
+                            "name": "spring-boot-test",
+                            "classifier": "sources",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-test/2.6.2/2fcb059dda509beecee340115a7e0037e1c3022e/spring-boot-test-2.6.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "net.minidev",
+                    "name": "json-smart",
+                    "version": "2.4.7",
+                    "artifacts": [
+                        {
+                            "name": "json-smart",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/net.minidev/json-smart/2.4.7/8d7f4c1530c07c54930935f3da85f48b83b3c109/json-smart-2.4.7.jar"
+                        },
+                        {
+                            "name": "json-smart",
+                            "classifier": "sources",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/net.minidev/json-smart/2.4.7/d64652c79751177c96a294fd5a1dcd61a330e940/json-smart-2.4.7-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.kafka",
+                    "name": "kafka-streams-test-utils",
+                    "version": "3.0.0",
+                    "artifacts": [
+                        {
+                            "name": "kafka-streams-test-utils",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.apache.kafka/kafka-streams-test-utils/3.0.0/8dd9220520bda26cc58f5962a465a62053d482b8/kafka-streams-test-utils-3.0.0.jar"
+                        },
+                        {
+                            "name": "kafka-streams-test-utils",
+                            "classifier": "sources",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.apache.kafka/kafka-streams-test-utils/3.0.0/c3ee576cee0e4483f071bd91815587eca88e8c7a/kafka-streams-test-utils-3.0.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty",
+                    "name": "netty-codec",
+                    "version": "4.1.72.Final",
+                    "artifacts": [
+                        {
+                            "name": "netty-codec",
+                            "classifier": "sources",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/io.netty/netty-codec/4.1.72.Final/262ed4de3e573c80fee3c71993a7958d18157a7/netty-codec-4.1.72.Final-sources.jar"
+                        },
+                        {
+                            "name": "netty-codec",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/io.netty/netty-codec/4.1.72.Final/613c4019d687db4e9a5532564e442f83c4474ed7/netty-codec-4.1.72.Final.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.junit.jupiter",
+                    "name": "junit-jupiter-params",
+                    "version": "5.8.2",
+                    "artifacts": [
+                        {
+                            "name": "junit-jupiter-params",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-params/5.8.2/ddeafe92fc263f895bfb73ffeca7fd56e23c2cce/junit-jupiter-params-5.8.2.jar"
+                        },
+                        {
+                            "name": "junit-jupiter-params",
+                            "classifier": "sources",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-params/5.8.2/26d07692b618b8da29479febec7d55e18107ee48/junit-jupiter-params-5.8.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-lang.modules",
+                    "name": "scala-java8-compat_2.13",
+                    "version": "1.0.0",
+                    "artifacts": [
+                        {
+                            "name": "scala-java8-compat_2.13",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.scala-lang.modules/scala-java8-compat_2.13/1.0.0/8ffac68615b438933fe27506e755d790a68b8bab/scala-java8-compat_2.13-1.0.0.jar"
+                        },
+                        {
+                            "name": "scala-java8-compat_2.13",
+                            "classifier": "sources",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.scala-lang.modules/scala-java8-compat_2.13/1.0.0/95cc5797c984881104e3858b785aa8a6de11f59e/scala-java8-compat_2.13-1.0.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.kafka",
+                    "name": "kafka-server-common",
+                    "version": "3.0.0",
+                    "artifacts": [
+                        {
+                            "name": "kafka-server-common",
+                            "classifier": "sources",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.apache.kafka/kafka-server-common/3.0.0/b9761a4b2997ed7be93e9a1ecb8c14aa99d86c22/kafka-server-common-3.0.0-sources.jar"
+                        },
+                        {
+                            "name": "kafka-server-common",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.apache.kafka/kafka-server-common/3.0.0/6d8bd5b4bf2e350d27b36c7770cede3b558ad448/kafka-server-common-3.0.0.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty",
+                    "name": "netty-tcnative-classes",
+                    "version": "2.0.46.Final",
+                    "artifacts": [
+                        {
+                            "name": "netty-tcnative-classes",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/io.netty/netty-tcnative-classes/2.0.46.Final/9937a832d9c19861822d345b48ced388b645aa5f/netty-tcnative-classes-2.0.46.Final.jar"
+                        },
+                        {
+                            "name": "netty-tcnative-classes",
+                            "classifier": "sources",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/io.netty/netty-tcnative-classes/2.0.46.Final/fd5373f574ac969627d50ee013c81384ec99ec5e/netty-tcnative-classes-2.0.46.Final-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-lang.modules",
+                    "name": "scala-collection-compat_2.13",
+                    "version": "2.4.4",
+                    "artifacts": [
+                        {
+                            "name": "scala-collection-compat_2.13",
+                            "classifier": "sources",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.scala-lang.modules/scala-collection-compat_2.13/2.4.4/ea562ccc23d3e6a45774a9a3d9463ab9cfaea7f6/scala-collection-compat_2.13-2.4.4-sources.jar"
+                        },
+                        {
+                            "name": "scala-collection-compat_2.13",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.scala-lang.modules/scala-collection-compat_2.13/2.4.4/9cb262981ba1fac1f25c0e7e2b285d536ec8923b/scala-collection-compat_2.13-2.4.4.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.yaml",
+                    "name": "snakeyaml",
+                    "version": "1.29",
+                    "artifacts": [
+                        {
+                            "name": "snakeyaml",
+                            "classifier": "sources",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.yaml/snakeyaml/1.29/3c1e0863032828174271eb0b6a6db726e177db/snakeyaml-1.29-sources.jar"
+                        },
+                        {
+                            "name": "snakeyaml",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.yaml/snakeyaml/1.29/408c282043543d43086c5b5c5908a3d73679d6a0/snakeyaml-1.29-android.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.slf4j",
+                    "name": "slf4j-api",
+                    "version": "1.7.32",
+                    "artifacts": [
+                        {
+                            "name": "slf4j-api",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.32/cdcff33940d9f2de763bc41ea05a0be5941176c3/slf4j-api-1.7.32.jar"
+                        },
+                        {
+                            "name": "slf4j-api",
+                            "classifier": "sources",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.32/4381b152f738580aef4e436b2692a3db30609b26/slf4j-api-1.7.32-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.github.luben",
+                    "name": "zstd-jni",
+                    "version": "1.5.0-2",
+                    "artifacts": [
+                        {
+                            "name": "zstd-jni",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/com.github.luben/zstd-jni/1.5.0-2/52fc9e353b4e84f8a87ebc9c5c59e58c91d5d23d/zstd-jni-1.5.0-2.jar"
+                        },
+                        {
+                            "name": "zstd-jni",
+                            "classifier": "sources",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/com.github.luben/zstd-jni/1.5.0-2/d7826f8dc7ee0ab5d5b16bcffaf634849a89983b/zstd-jni-1.5.0-2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.kafka",
+                    "name": "kafka-clients",
+                    "version": "3.0.0",
+                    "artifacts": [
+                        {
+                            "name": "kafka-clients",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.apache.kafka/kafka-clients/3.0.0/5301db5e9ad9f17da85a4dec06e1d313071dc9d8/kafka-clients-3.0.0.jar"
+                        },
+                        {
+                            "name": "kafka-clients",
+                            "classifier": "sources",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.apache.kafka/kafka-clients/3.0.0/ab7f5e4c05d2caff86784352e6fa74751f91d3a6/kafka-clients-3.0.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.xmlunit",
+                    "name": "xmlunit-core",
+                    "version": "2.8.4",
+                    "artifacts": [
+                        {
+                            "name": "xmlunit-core",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.xmlunit/xmlunit-core/2.8.4/35be57989ca80eefa03161b211630e319a8f36c6/xmlunit-core-2.8.4.jar"
+                        },
+                        {
+                            "name": "xmlunit-core",
+                            "classifier": "sources",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.xmlunit/xmlunit-core/2.8.4/99e7fb120be101ca1cb420bdda68140acb3a452d/xmlunit-core-2.8.4-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.fasterxml.jackson.core",
+                    "name": "jackson-annotations",
+                    "version": "2.13.1",
+                    "artifacts": [
+                        {
+                            "name": "jackson-annotations",
+                            "classifier": "sources",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.13.1/7d167558a509af98d1ce5610ba142735a6990faa/jackson-annotations-2.13.1-sources.jar"
+                        },
+                        {
+                            "name": "jackson-annotations",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.13.1/1cbcbe4623113e6af92ccaa89884a345270f1a87/jackson-annotations-2.13.1.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.springframework.boot",
+                    "name": "spring-boot-autoconfigure",
+                    "version": "2.6.2",
+                    "artifacts": [
+                        {
+                            "name": "spring-boot-autoconfigure",
+                            "classifier": "sources",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-autoconfigure/2.6.2/c9e7c15a47ce78017b4ad971bf914c31eb096d53/spring-boot-autoconfigure-2.6.2-sources.jar"
+                        },
+                        {
+                            "name": "spring-boot-autoconfigure",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-autoconfigure/2.6.2/7c91bce101d3f796cccbc1a6744c1ea389fff73f/spring-boot-autoconfigure-2.6.2.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.kafka",
+                    "name": "kafka-streams",
+                    "version": "3.0.0",
+                    "artifacts": [
+                        {
+                            "name": "kafka-streams",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.apache.kafka/kafka-streams/3.0.0/9a76b73623b06c654d96df917026706c50a88226/kafka-streams-3.0.0.jar"
+                        },
+                        {
+                            "name": "kafka-streams",
+                            "classifier": "sources",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.apache.kafka/kafka-streams/3.0.0/f29516c8f92104085a8a519d0b219525f3ec8eee/kafka-streams-3.0.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.springframework",
+                    "name": "spring-test",
+                    "version": "5.3.14",
+                    "artifacts": [
+                        {
+                            "name": "spring-test",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.springframework/spring-test/5.3.14/770429bdf3a3823604817bb66f63b5ee8cf1050/spring-test-5.3.14.jar"
+                        },
+                        {
+                            "name": "spring-test",
+                            "classifier": "sources",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.springframework/spring-test/5.3.14/2bcfe34156107c22a5928582f68ba771375079e7/spring-test-5.3.14-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "net.bytebuddy",
+                    "name": "byte-buddy-agent",
+                    "version": "1.11.22",
+                    "artifacts": [
+                        {
+                            "name": "byte-buddy-agent",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy-agent/1.11.22/2fbcf3210dfc09b42242e3b66a5281cc5b9adb80/byte-buddy-agent-1.11.22.jar"
+                        },
+                        {
+                            "name": "byte-buddy-agent",
+                            "classifier": "sources",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy-agent/1.11.22/8983d6c1637742ecad1c3be265d93338402efea9/byte-buddy-agent-1.11.22-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.springframework.kafka",
+                    "name": "spring-kafka-test",
+                    "version": "2.8.1",
+                    "artifacts": [
+                        {
+                            "name": "spring-kafka-test",
+                            "classifier": "sources",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.springframework.kafka/spring-kafka-test/2.8.1/bbafe2e016bf58beed6e5337787d725ad46cb0b5/spring-kafka-test-2.8.1-sources.jar"
+                        },
+                        {
+                            "name": "spring-kafka-test",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.springframework.kafka/spring-kafka-test/2.8.1/ef67a7de59706da91437e8d074032ed8b2583e3c/spring-kafka-test-2.8.1.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apiguardian",
+                    "name": "apiguardian-api",
+                    "version": "1.1.2",
+                    "artifacts": [
+                        {
+                            "name": "apiguardian-api",
+                            "classifier": "sources",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.apiguardian/apiguardian-api/1.1.2/e0787a997746ac32639e0bf3cb27af8dce8a3428/apiguardian-api-1.1.2-sources.jar"
+                        },
+                        {
+                            "name": "apiguardian-api",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/org.apiguardian/apiguardian-api/1.1.2/a231e0d844d2721b0fa1b238006d15c6ded6842a/apiguardian-api-1.1.2.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.thoughtworks.paranamer",
+                    "name": "paranamer",
+                    "version": "2.8",
+                    "artifacts": [
+                        {
+                            "name": "paranamer",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/com.thoughtworks.paranamer/paranamer/2.8/619eba74c19ccf1da8ebec97a2d7f8ba05773dd6/paranamer-2.8.jar"
+                        },
+                        {
+                            "name": "paranamer",
+                            "classifier": "sources",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/com.thoughtworks.paranamer/paranamer/2.8/8f3421a8203053a6ab4b74f76a0550d21eee8cfe/paranamer-2.8-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.vaadin.external.google",
+                    "name": "android-json",
+                    "version": "0.0.20131108.vaadin1",
+                    "artifacts": [
+                        {
+                            "name": "android-json",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/com.vaadin.external.google/android-json/0.0.20131108.vaadin1/fa26d351fe62a6a17f5cda1287c1c6110dec413f/android-json-0.0.20131108.vaadin1.jar"
+                        },
+                        {
+                            "name": "android-json",
+                            "classifier": "sources",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/com.vaadin.external.google/android-json/0.0.20131108.vaadin1/bf42d7e47a3228513b626dd7d37ac6f072aeca4f/android-json-0.0.20131108.vaadin1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.fasterxml.jackson.core",
+                    "name": "jackson-databind",
+                    "version": "2.13.1",
+                    "artifacts": [
+                        {
+                            "name": "jackson-databind",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.13.1/698b2d2b15d9a1b7aae025f1d9f576842285e7f6/jackson-databind-2.13.1.jar"
+                        },
+                        {
+                            "name": "jackson-databind",
+                            "classifier": "sources",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.13.1/3a556489e4a16b4837fd640c46a858c8402a1eb/jackson-databind-2.13.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "ch.qos.logback",
+                    "name": "logback-core",
+                    "version": "1.2.9",
+                    "artifacts": [
+                        {
+                            "name": "logback-core",
+                            "classifier": "sources",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-core/1.2.9/92412f3c48649ab2dbe036dd9a57af0a741cb27e/logback-core-1.2.9-sources.jar"
+                        },
+                        {
+                            "name": "logback-core",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-core/1.2.9/cdaca0cf922c5791a8efa0063ec714ca974affe3/logback-core-1.2.9.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty",
+                    "name": "netty-transport",
+                    "version": "4.1.72.Final",
+                    "artifacts": [
+                        {
+                            "name": "netty-transport",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/io.netty/netty-transport/4.1.72.Final/99138b436a584879355aca8fe3c64b46227d5d79/netty-transport-4.1.72.Final.jar"
+                        },
+                        {
+                            "name": "netty-transport",
+                            "classifier": "sources",
+                            "path": "/Users/yerimlee/.gradle/caches/modules-2/files-2.1/io.netty/netty-transport/4.1.72.Final/a8bb0ab7e69137ffbbb21185967a490dd3a703b/netty-transport-4.1.72.Final-sources.jar"
+                        }
+                    ]
+                }
+            ]
+        },
+        "tags": [
+            "test"
+        ]
+    }
+}

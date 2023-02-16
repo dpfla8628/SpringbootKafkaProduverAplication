@@ -1,0 +1,45 @@
+plugins {
+	id 'org.springframework.boot' version '2.6.2'
+	id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+	id 'java'
+	id 'application'
+}
+
+group = 'com.simulator'
+version = '0.0.1'
+sourceCompatibility = '8'
+mainClassName = 'com.simulator.SpringbootKafkaProducerApplication'
+
+// 내부에 있는 파일 접근할 수 있도록 하고 같이 jar로 묶기
+// sourceSets {
+//     main {
+//         resources {
+//             srcDir 'src/main/resources/conf'
+//         }
+//     }
+// }
+
+configurations {
+	compileOnly {
+		extendsFrom annotationProcessor
+	}
+}
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation 'org.springframework.kafka:spring-kafka'
+	implementation 'com.github.javafaker:javafaker:1.0.2'
+	implementation 'com.googlecode.json-simple:json-simple:1.1.1'
+	compileOnly 'org.projectlombok:lombok'
+	annotationProcessor 'org.projectlombok:lombok'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	testImplementation 'org.springframework.kafka:spring-kafka-test'
+}
+
+test {
+	useJUnitPlatform()
+}
